@@ -1,0 +1,28 @@
+name: Weekly site report
+
+on:
+  schedule:
+    - cron: "5 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Crawl the sitemap and open an issue with the results
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/weekly_report.py
+      - name: Ping IndexNow for everything updated this week
+        env:
+          DAYS: "7"
+        run: python scripts/indexnow.py

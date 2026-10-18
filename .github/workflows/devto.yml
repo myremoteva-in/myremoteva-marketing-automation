@@ -1,0 +1,35 @@
+name: Cross-post new guides to DEV (drafts by default)
+
+on:
+  schedule:
+    - cron: "11 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: devto
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Create the DEV article
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          DEVTO_PUBLISH: ${{ vars.DEVTO_PUBLISH }}
+        run: python scripts/crosspost_devto.py
+      - name: Save what was posted
+        run: |
+          git config user.name "marketing-bot"
+          git config user.email "bot@users.noreply.github.com"
+          mkdir -p state
+          git add state
+          git diff --cached --quiet || (git commit -m "Update DEV state" && git push)

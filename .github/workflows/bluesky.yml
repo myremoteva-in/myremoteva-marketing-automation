@@ -1,0 +1,40 @@
+name: Post new guides to Bluesky
+
+on:
+  schedule:
+    - cron: "41 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "On the very first run, post this many of the newest guides"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bluesky
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Post new guides
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          BACKFILL: ${{ github.event.inputs.backfill }}
+        run: python scripts/post_to_bluesky.py
+      - name: Save what was posted
+        run: |
+          git config user.name "marketing-bot"
+          git config user.email "bot@users.noreply.github.com"
+          mkdir -p state
+          git add state
+          git diff --cached --quiet || (git commit -m "Update Bluesky state" && git push)
