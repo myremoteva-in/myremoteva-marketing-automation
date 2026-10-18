@@ -11,6 +11,7 @@ Free GitHub Actions that keep [myremoteva.com](https://myremoteva.com) healthy, 
 | Post new guides to Bluesky | every 2 hours | Posts each new guide once, with a UTM link (max 3 a day). Never follows, likes, replies or messages anyone | BLUESKY_HANDLE, BLUESKY_APP_PASSWORD |
 | Cross-post to DEV | every 6 hours | Creates a DEV article from each new guide as a draft, with a canonical link to the original on myremoteva.com | DEVTO_API_KEY |
 | Weekly site report | Mondays | Checks every sitemap URL, lists errors and noindex pages, opens an Issue with the week's to-do list, pings IndexNow | none |
+| Draw and post a cartoon | weekdays, 2 runs a day | Draws an original cartoon (Pillow, same flat style as our earlier ones) for the next post in social/bank.json and posts it to LinkedIn (max 1 a day, link in the first comment) and to X (max 2 a day) through their official APIs. Without secrets it only draws the image | LINKEDIN_ACCESS_TOKEN, LINKEDIN_AUTHOR_URN, X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET |
 
 The repository also publishes the free [virtual assistant task brief templates](templates/virtual-assistant-task-brief-templates.md) so people and AI assistants can find and reuse them.
 
@@ -20,6 +21,14 @@ The repository also publishes the free [virtual assistant task brief templates](
 2. Settings, Secrets and variables, Actions, add the secrets you want. Use a Bluesky APP PASSWORD (Bluesky Settings, Privacy and security, App passwords) and never your login password. Workflows with a missing secret simply skip.
 3. Optional variable `DEVTO_PUBLISH` = `true` to publish DEV articles automatically. Leave it unset to review drafts first.
 4. Run each workflow once from the Actions tab (Run workflow) to confirm it is green.
+
+## Getting the LinkedIn and X keys (free, one time)
+
+For LinkedIn, create an app at developer.linkedin.com, add the product Share on LinkedIn, generate an access token with the w_member_social scope, and note your author URN (urn:li:person:... for a profile). Tokens expire after about 60 days, so renew when the workflow reports a 401. Company-page posting needs LinkedIn's Community Management access and a urn:li:organization:... value.
+
+For X, create a project and app at developer.x.com with Read and Write permission, then generate the API key, API secret, access token and access token secret. The free tier allows a limited number of posts a month, which is enough for 2 a day.
+
+Add them as repository secrets. Never paste them in a chat or a file. Use only the official APIs: browser or cookie bots break LinkedIn's and X's rules and can get the account restricted.
 
 ## Honest expectations
 
