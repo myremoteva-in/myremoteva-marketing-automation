@@ -11,7 +11,8 @@ Free GitHub Actions that keep [myremoteva.com](https://myremoteva.com) healthy, 
 | Post new guides to Bluesky | every 2 hours | Posts each new guide once, with a UTM link (max 3 a day). Never follows, likes, replies or messages anyone | BLUESKY_HANDLE, BLUESKY_APP_PASSWORD |
 | Cross-post to DEV | every 6 hours | Creates a DEV article from each new guide as a draft, with a canonical link to the original on myremoteva.com | DEVTO_API_KEY |
 | Weekly site report | Mondays | Checks every sitemap URL, lists errors and noindex pages, opens an Issue with the week's to-do list, pings IndexNow | none |
-| Draw and post a cartoon | weekdays, 2 runs a day | Draws an original cartoon (Pillow, same flat style as our earlier ones) for the next post in social/bank.json and posts it to LinkedIn (max 1 a day, link in the first comment) and to X (max 2 a day) through their official APIs. Without secrets it only draws the image | LINKEDIN_ACCESS_TOKEN, LINKEDIN_AUTHOR_URN, X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET |
+| Daily posts to Buffer (LinkedIn and X) | daily | Chooses the next 3 posts per channel from social/bank.json and then from our own guides, draws an original cartoon for each (Pillow, no AI), publishes the images in this repo and adds the posts to your Buffer queue through Buffer's API. Nothing is posted by GitHub itself: Buffer holds your LinkedIn and X connections | BUFFER_API_KEY |
+| (Optional) Direct LinkedIn and X posting | manual | The earlier version that talks to LinkedIn and X directly. Not used | LinkedIn and X keys |
 
 The repository also publishes the free [virtual assistant task brief templates](templates/virtual-assistant-task-brief-templates.md) so people and AI assistants can find and reuse them.
 
@@ -21,6 +22,14 @@ The repository also publishes the free [virtual assistant task brief templates](
 2. Settings, Secrets and variables, Actions, add the secrets you want. Use a Bluesky APP PASSWORD (Bluesky Settings, Privacy and security, App passwords) and never your login password. Workflows with a missing secret simply skip.
 3. Optional variable `DEVTO_PUBLISH` = `true` to publish DEV articles automatically. Leave it unset to review drafts first.
 4. Run each workflow once from the Actions tab (Run workflow) to confirm it is green.
+
+## Buffer setup (free, 10 minutes)
+
+1. Sign up at buffer.com (free plan: 3 channels, a queue of up to 10 posts per channel at a time). Connect your LinkedIn and X accounts.
+2. In Buffer set a posting schedule with at least 3 slots a day for each channel, so the queue empties as the workflow fills it.
+3. In Buffer, open Settings, then API, and create a key. Add it here as the secret BUFFER_API_KEY. Never paste it in a chat.
+4. Run the workflow once from the Actions tab. The log shows which channels it found and what it queued.
+5. Change PER_CHANNEL (default 3) in the workflow if you want fewer posts. For a small LinkedIn audience, 1 or 2 a day is often better.
 
 ## Getting the LinkedIn and X keys (free, one time)
 
