@@ -76,3 +76,6 @@ for p in plan:
 
 save_state("state/buffer.json", state)
 print("queued %d post(s)" % sent)
+if sent == 0 and full:
+    print("NOTHING WAS QUEUED. Check: the Buffer queue may be full (add posting slots), a channel may be disconnected, or the key may have expired.")
+    sys.exit(1)  # a red run makes GitHub email the repo owner
