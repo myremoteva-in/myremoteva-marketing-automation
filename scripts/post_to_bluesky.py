@@ -19,6 +19,14 @@ if not handle or not password:
     print("BLUESKY_HANDLE or BLUESKY_APP_PASSWORD secret missing: nothing posted (add both in Settings > Secrets > Actions).")
     sys.exit(0)
 
+# Forgive common typing slips in the two secrets.
+handle = handle.lstrip("@").strip().lower()
+if "." not in handle:
+    handle += ".bsky.social"
+compact = password.replace("-", "").replace(" ", "")
+if len(compact) == 16:
+    password = "-".join(compact[i:i + 4] for i in range(0, 16, 4))
+
 items = feed_items()
 state = load_state(STATE, {"posted": [], "day": "", "count": 0})
 today = datetime.date.today().isoformat()
@@ -41,8 +49,15 @@ def api(path, payload, token=None):
     if token:
         headers["Authorization"] = "Bearer " + token
     req = urllib.request.Request("https://bsky.social/xrpc/" + path, data=json.dumps(payload).encode(), headers=headers, method="POST")
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.loads(r.read().decode())
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        print("Bluesky API error %s on %s: %s" % (e.code, path, e.read()[:300].decode("utf-8", "replace")))
+        if path.endswith("createSession"):
+            print("Login rejected. Check that BLUESKY_HANDLE is exactly your handle (for example myremoteva.bsky.social) "
+                  "and that BLUESKY_APP_PASSWORD is a current Bluesky APP password (not the login password).")
+        sys.exit(1)
 
 
 if todo:
