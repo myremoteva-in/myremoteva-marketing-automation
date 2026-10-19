@@ -1,9 +1,6 @@
-name: Draw and post a cartoon to LinkedIn and X
+name: (Optional, direct APIs) Draw and post a cartoon to LinkedIn and X
 
 on:
-  schedule:
-    - cron: "0 8 * * 1-5"
-    - cron: "30 13 * * 1-5"
   workflow_dispatch:
     inputs:
       dry_run:

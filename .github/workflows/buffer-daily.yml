@@ -1,0 +1,55 @@
+name: Daily posts to Buffer (LinkedIn and X, no AI)
+
+on:
+  schedule:
+    - cron: "10 5 * * *"
+  workflow_dispatch:
+    inputs:
+      per_channel:
+        description: "Posts per channel this run"
+        default: "3"
+      dry_run:
+        description: "1 = only print the plan"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buffer-daily
+  cancel-in-progress: false
+
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Choose posts and draw the cartoons
+        env:
+          PER_CHANNEL: ${{ github.event.inputs.per_channel || '3' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: python scripts/prepare_posts.py
+      - name: Publish the images (Buffer fetches them from this repo)
+        run: |
+          git config user.name "marketing-bot"
+          git config user.email "bot@users.noreply.github.com"
+          mkdir -p state social/out
+          git add social/out state/plan.json
+          git diff --cached --quiet || (git commit -m "Daily cartoons and plan" && git push)
+          sleep 20
+      - name: Queue the posts in Buffer
+        if: ${{ github.event.inputs.dry_run != '1' }}
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python scripts/buffer_post.py
+      - name: Save the post history
+        if: always()
+        run: |
+          mkdir -p state
+          git add state
+          git diff --cached --quiet || (git commit -m "Buffer post history" && git push)
