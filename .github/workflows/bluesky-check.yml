@@ -1,0 +1,36 @@
+name: Bluesky login check
+on:
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check shape and login
+        env:
+          H: ${{ secrets.BLUESKY_HANDLE }}
+          P: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: |
+          python3 - <<'EOF'
+          import os, re, json, urllib.request, urllib.error
+          h = os.environ.get("H", "")
+          p = os.environ.get("P", "")
+          hs = h.strip().lstrip("@").lower()
+          print("handle length:", len(h), "| ends with .bsky.social:", hs.endswith(".bsky.social"), "| has space/newline:", h != h.strip() or "\n" in h)
+          print("password length:", len(p), "| stripped length:", len(p.strip()))
+          print("has space:", " " in p, "| has newline:", "\n" in p or "\r" in p, "| has uppercase:", any(c.isupper() for c in p))
+          print("groups split by dash:", [len(x) for x in p.strip().split("-")])
+          print("looks like an app password (xxxx-xxxx-xxxx-xxxx):", bool(re.fullmatch(r"[a-z0-9]{4}(-[a-z0-9]{4}){3}", p.strip())))
+          def call(url, payload=None):
+              data = json.dumps(payload).encode() if payload else None
+              req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json", "User-Agent": "mrva-check"}, method="POST" if payload else "GET")
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      return r.status, r.read()[:200].decode("utf-8", "replace")
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read()[:200].decode("utf-8", "replace")
+          code, body = call("https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=" + hs)
+          print("handle resolves:", code, "did:plc" in body or "did:web" in body)
+          for label, ident in (("handle", hs), ("handle without at", h.strip().lstrip("@"))):
+              c, b = call("https://bsky.social/xrpc/com.atproto.server.createSession", {"identifier": ident, "password": p.strip()})
+              print("login with", label, "->", c, "OK" if c == 200 else b[:120])
+          EOF
