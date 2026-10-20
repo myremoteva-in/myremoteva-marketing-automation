@@ -2,15 +2,39 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "ag1-reports",
-      "image": "ag1-reports.png",
-      "text": "Client reports are the most common thing that eats an agency's Friday. The numbers live in five tools and the layout never changes.\n\nThat is a good job to hand off: an assistant pulls the numbers into your template, you review and send. Start with one client for one month and see how many hours come back.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-marketing-agencies?utm_source=linkedin&utm_medium=social&utm_campaign=ag1-reports"
+      "id": "ag2-invoices",
+      "image": "ag2-invoices.png",
+      "text": "Some late payments are simply unsent reminders. A polite email on day 1, day 7 and day 14 is a simple routine, yet it rarely gets done because it feels small.\n\nSmall, repeat and written is exactly what a virtual assistant does well. You keep the relationship, they keep the calendar of reminders.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-marketing-agencies?utm_source=linkedin&utm_medium=social&utm_campaign=ag2-invoices"
+    },
+    {
+      "channel": "linkedin",
+      "id": "re1-showings",
+      "image": "re1-showings.png",
+      "text": "Real estate teams lose agent hours to scheduling, listing updates and CRM entry. None of it needs a licence, and all of it follows a checklist.\n\nHand those tasks off and agents spend the hours on clients. Our assistants work in your time zone on non-calling tasks.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-real-estate-agents?utm_source=linkedin&utm_medium=social&utm_campaign=re1-showings"
+    },
+    {
+      "channel": "linkedin",
+      "id": "pm1-owners",
+      "image": "pm1-owners.png",
+      "text": "Property managers spend a lot of time on tenant emails, maintenance tracking and owner statements. The repeat parts can be handed off with a clear checklist.\n\nWhat cannot be handed off: emergencies, entry to units and legal decisions. Keep those with your on-call team.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-property-managers?utm_source=linkedin&utm_medium=social&utm_campaign=pm1-owners"
     },
     {
       "channel": "twitter",
-      "id": "ag1-reports",
-      "image": "ag1-reports.png",
-      "text": "Agency owners: the client report that eats your Friday is a repeat task. Hand off the number-pulling, keep the review.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-marketing-agencies?utm_source=x&utm_medium=social&utm_campaign=ag1-reports"
+      "id": "ag2-invoices",
+      "image": "ag2-invoices.png",
+      "text": "Many late invoices are just unsent reminders. A day 1, 7 and 14 email routine is easy to hand off.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-marketing-agencies?utm_source=x&utm_medium=social&utm_campaign=ag2-invoices"
+    },
+    {
+      "channel": "twitter",
+      "id": "re1-showings",
+      "image": "re1-showings.png",
+      "text": "Scheduling, listing updates and CRM entry follow a checklist. Hand them off so agents spend hours on clients.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-real-estate-agents?utm_source=x&utm_medium=social&utm_campaign=re1-showings"
+    },
+    {
+      "channel": "twitter",
+      "id": "pm1-owners",
+      "image": "pm1-owners.png",
+      "text": "Tenant emails, maintenance logs and owner statements repeat every month. Hand off the repeat parts, keep emergencies in-house.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-property-managers?utm_source=x&utm_medium=social&utm_campaign=pm1-owners"
     }
   ]
 }
