@@ -2,39 +2,39 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "ag2-invoices",
-      "image": "ag2-invoices.png",
-      "text": "Some late payments are simply unsent reminders. A polite email on day 1, day 7 and day 14 is a simple routine, yet it rarely gets done because it feels small.\n\nSmall, repeat and written is exactly what a virtual assistant does well. You keep the relationship, they keep the calendar of reminders.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-marketing-agencies?utm_source=linkedin&utm_medium=social&utm_campaign=ag2-invoices"
+      "id": "ac1-docs",
+      "image": "ac1-docs.png",
+      "text": "Document chasing is the quiet cost in every accounting practice. Each reminder is small, but together they steal partner and senior hours.\n\nAn assistant can send reminders, track what has arrived and keep a deadline list. Tax advice and filings stay with your qualified team.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-accountants?utm_source=linkedin&utm_medium=social&utm_campaign=ac1-docs"
     },
     {
       "channel": "linkedin",
-      "id": "re1-showings",
-      "image": "re1-showings.png",
-      "text": "Real estate teams lose agent hours to scheduling, listing updates and CRM entry. None of it needs a licence, and all of it follows a checklist.\n\nHand those tasks off and agents spend the hours on clients. Our assistants work in your time zone on non-calling tasks.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-real-estate-agents?utm_source=linkedin&utm_medium=social&utm_campaign=re1-showings"
+      "id": "lf1-intake",
+      "image": "lf1-intake.png",
+      "text": "Law firms can hand off intake admin, scheduling and billing preparation with strict limits: no legal advice, no handling of client funds, and clear confidentiality terms.\n\nStart with one repeat task and keep the access narrow.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-law-firms?utm_source=linkedin&utm_medium=social&utm_campaign=lf1-intake"
     },
     {
       "channel": "linkedin",
-      "id": "pm1-owners",
-      "image": "pm1-owners.png",
-      "text": "Property managers spend a lot of time on tenant emails, maintenance tracking and owner statements. The repeat parts can be handed off with a clear checklist.\n\nWhat cannot be handed off: emergencies, entry to units and legal decisions. Keep those with your on-call team.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-property-managers?utm_source=linkedin&utm_medium=social&utm_campaign=pm1-owners"
+      "id": "fo1-inbox",
+      "image": "fo1-inbox.png",
+      "text": "If email is the first thing you open and the last thing you close, it is a hand-off candidate. Sorting, flagging and drafting routine replies follows rules you can write down in one page.\n\nA free plan shows what to hand off first, week by week.\n\nhttps://myremoteva.com/delegation-plan?utm_source=linkedin&utm_medium=social&utm_campaign=fo1-inbox"
     },
     {
       "channel": "twitter",
-      "id": "ag2-invoices",
-      "image": "ag2-invoices.png",
-      "text": "Many late invoices are just unsent reminders. A day 1, 7 and 14 email routine is easy to hand off.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-marketing-agencies?utm_source=x&utm_medium=social&utm_campaign=ag2-invoices"
+      "id": "ac1-docs",
+      "image": "ac1-docs.png",
+      "text": "Chasing client documents steals senior hours. Reminders and tracking are easy to hand off. Advice and filings stay with you.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-accountants?utm_source=x&utm_medium=social&utm_campaign=ac1-docs"
     },
     {
       "channel": "twitter",
-      "id": "re1-showings",
-      "image": "re1-showings.png",
-      "text": "Scheduling, listing updates and CRM entry follow a checklist. Hand them off so agents spend hours on clients.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-real-estate-agents?utm_source=x&utm_medium=social&utm_campaign=re1-showings"
+      "id": "lf1-intake",
+      "image": "lf1-intake.png",
+      "text": "Intake admin, scheduling and billing prep can be handed off with strict limits. No legal advice, narrow access.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-law-firms?utm_source=x&utm_medium=social&utm_campaign=lf1-intake"
     },
     {
       "channel": "twitter",
-      "id": "pm1-owners",
-      "image": "pm1-owners.png",
-      "text": "Tenant emails, maintenance logs and owner statements repeat every month. Hand off the repeat parts, keep emergencies in-house.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-property-managers?utm_source=x&utm_medium=social&utm_campaign=pm1-owners"
+      "id": "fo1-inbox",
+      "image": "fo1-inbox.png",
+      "text": "If email is the first thing you open and the last thing you close, it is a hand-off candidate. A free plan shows where to start.\n\nhttps://myremoteva.com/delegation-plan?utm_source=x&utm_medium=social&utm_campaign=fo1-inbox"
     }
   ]
 }
