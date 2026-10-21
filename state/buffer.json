@@ -4,13 +4,19 @@
       "ag1-reports",
       "ag2-invoices",
       "re1-showings",
-      "pm1-owners"
+      "pm1-owners",
+      "ac1-docs",
+      "lf1-intake",
+      "fo1-inbox"
     ],
     "twitter": [
       "ag1-reports",
       "ag2-invoices",
       "re1-showings",
-      "pm1-owners"
+      "pm1-owners",
+      "ac1-docs",
+      "lf1-intake",
+      "fo1-inbox"
     ]
   }
 }
