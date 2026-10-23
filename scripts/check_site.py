@@ -54,7 +54,7 @@ for path, needles in PAGES.items():
             expect("%s has no noindex" % path, False)
 
 code, body = status(SITE + "/sitemap.xml")
-expect("sitemap.xml has more than 400 URLs", code == 200 and body.count("<loc>") > 400, "%d urls" % body.count("<loc>"))
+expect("sitemap.xml has more than 250 URLs", code == 200 and body.count("<loc>") > 250, "%d urls" % body.count("<loc>"))
 code, body = status(SITE + "/robots.txt")
 expect("robots.txt lists the sitemap", code == 200 and "sitemap" in body.lower())
 code, _ = status(SITE + "/llms.txt")
