@@ -62,4 +62,7 @@ try:
         save_state(STATE, state)
 except urllib.error.HTTPError as e:
     print("DEV API error", e.code, e.read()[:300])
+    if e.code == 429 or e.code >= 500:
+        print("Temporary DEV limit or outage; the next scheduled run will retry.")
+        sys.exit(0)
     sys.exit(1)
