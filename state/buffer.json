@@ -10,7 +10,10 @@
       "fo1-inbox",
       "da1-160",
       "pr1-task",
-      "pr2-plans"
+      "pr2-plans",
+      "ab1-hosts",
+      "bk1-startup",
+      "bk2-monthend"
     ],
     "twitter": [
       "ag1-reports",
@@ -22,7 +25,10 @@
       "fo1-inbox",
       "da1-160",
       "pr1-task",
-      "pr2-plans"
+      "pr2-plans",
+      "ab1-hosts",
+      "bk1-startup",
+      "bk2-monthend"
     ]
   }
 }
