@@ -2,39 +2,39 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "pr1-task",
-      "image": "pr1-task.png",
-      "text": "Cost per task is simple: minutes divided by 60, times the hourly rate. A 15-minute task at $5.62 an hour is $1.40. At the $12 pay-as-you-go rate it is $3.00.\n\nThe guide has the full table by plan, plus example tasks with the assumed minutes shown.\n\nhttps://myremoteva.com/blog/virtual-assistant-cost-per-task?utm_source=linkedin&utm_medium=social&utm_campaign=pr1-task"
-    },
-    {
-      "channel": "linkedin",
-      "id": "pr2-plans",
-      "image": "pr2-plans.png",
-      "text": "To pick a plan, list your repeat jobs, note the minutes each takes, add them up and divide by 60. Under 5 hours a month suits a small block or pay-as-you-go. Work that fills the month suits the 160-hour plan.\n\nUnused hours roll over while your account is active.\n\nhttps://myremoteva.com/blog/affordable-virtual-assistant-monthly-plans?utm_source=linkedin&utm_medium=social&utm_campaign=pr2-plans"
-    },
-    {
-      "channel": "linkedin",
       "id": "ab1-hosts",
       "image": "ab1-hosts.png",
       "text": "Hosts answer the same ten guest questions all year. Saved answers, a calendar check and a cleaner schedule are easy to hand off. Keys, cleaning and emergencies stay with you or a local co-host.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-airbnb-hosts?utm_source=linkedin&utm_medium=social&utm_campaign=ab1-hosts"
     },
     {
-      "channel": "twitter",
-      "id": "da1-160",
-      "image": "da1-160.png",
-      "text": "Full-time dedicated virtual assistant: 160 hours for $899, or $5.62 an hour. Part-time is 80 hours for $500.\n\nhttps://myremoteva.com/blog/dedicated-virtual-assistant?utm_source=x&utm_medium=social&utm_campaign=da1-160"
+      "channel": "linkedin",
+      "id": "bk1-startup",
+      "image": "bk1-startup.png",
+      "text": "Early books are simple but they pile up. A separate business bank account, a receipt habit and a monthly routine keep them clean. A 30-day plan in the guide shows the order. This is record keeping, not tax advice, so keep an accountant for advice and filings.\n\nhttps://myremoteva.com/blog/outsourced-bookkeeping-for-startups?utm_source=linkedin&utm_medium=social&utm_campaign=bk1-startup"
+    },
+    {
+      "channel": "linkedin",
+      "id": "bk2-monthend",
+      "image": "bk2-monthend.png",
+      "text": "Reconciling the bank is the step that protects every other step in a month-end close. The checklist has all 12 steps and a hand-off table showing what a VA can do and what stays with your accountant.\n\nhttps://myremoteva.com/blog/month-end-bookkeeping-checklist?utm_source=linkedin&utm_medium=social&utm_campaign=bk2-monthend"
     },
     {
       "channel": "twitter",
-      "id": "pr1-task",
-      "image": "pr1-task.png",
-      "text": "A 15-minute task costs $1.40 at $5.62 an hour and $3.00 at $12 an hour. Cost per task is minutes divided by 60 times the rate.\n\nhttps://myremoteva.com/blog/virtual-assistant-cost-per-task?utm_source=x&utm_medium=social&utm_campaign=pr1-task"
+      "id": "ab1-hosts",
+      "image": "ab1-hosts.png",
+      "text": "Hosts answer the same ten guest questions all year. Save the answers, hand off the replies, keep the keys.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-airbnb-hosts?utm_source=x&utm_medium=social&utm_campaign=ab1-hosts"
     },
     {
       "channel": "twitter",
-      "id": "pr2-plans",
-      "image": "pr2-plans.png",
-      "text": "Pick a plan in 3 steps: list repeat jobs, add the minutes, divide by 60. Unused hours roll over.\n\nhttps://myremoteva.com/blog/affordable-virtual-assistant-monthly-plans?utm_source=x&utm_medium=social&utm_campaign=pr2-plans"
+      "id": "bk1-startup",
+      "image": "bk1-startup.png",
+      "text": "Early books pile up fast. A 30-day setup plan: bank account, receipts, monthly routine. Keep an accountant for advice.\n\nhttps://myremoteva.com/blog/outsourced-bookkeeping-for-startups?utm_source=x&utm_medium=social&utm_campaign=bk1-startup"
+    },
+    {
+      "channel": "twitter",
+      "id": "bk2-monthend",
+      "image": "bk2-monthend.png",
+      "text": "Month-end close in 12 steps. Step 6, reconcile the bank, protects the other eleven.\n\nhttps://myremoteva.com/blog/month-end-bookkeeping-checklist?utm_source=x&utm_medium=social&utm_campaign=bk2-monthend"
     }
   ]
 }
