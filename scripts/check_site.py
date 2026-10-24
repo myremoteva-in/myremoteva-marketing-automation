@@ -16,17 +16,32 @@ failures = []
 
 
 def status(url):
+    """Fetch with up to 3 tries. A 403 or 429 from the CDN is retried after a pause; it is a block on the runner, not an outage."""
+    import time
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.status, r.read().decode("utf-8", "replace")
-    except urllib.error.HTTPError as e:
-        return e.code, ""
-    except Exception as e:  # network error
-        return 0, str(e)
+    last = (0, "")
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.status, r.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:
+            last = (e.code, "")
+            if e.code not in (403, 429, 502, 503, 504):
+                return last
+        except Exception as e:  # network error
+            last = (0, str(e))
+        time.sleep(20)
+    return last
+
+
+BLOCKED = (403, 429)
 
 
 def expect(label, ok, detail=""):
+    # 403/429 after retries means the CDN refused the GitHub runner. Real outages show as 5xx, timeouts or 404.
+    if not ok and detail.strip() in ("403", "429"):
+        print("WARN " + label + " - " + detail + " (CDN blocked the runner; not counted as an outage)")
+        return
     print(("PASS " if ok else "FAIL ") + label + (" - " + detail if detail else ""))
     if not ok:
         failures.append(label)
@@ -54,9 +69,9 @@ for path, needles in PAGES.items():
             expect("%s has no noindex" % path, False)
 
 code, body = status(SITE + "/sitemap.xml")
-expect("sitemap.xml has more than 250 URLs", code == 200 and body.count("<loc>") > 250, "%d urls" % body.count("<loc>"))
+expect("sitemap.xml has more than 250 URLs", code == 200 and body.count("<loc>") > 250, ("%d urls" % body.count("<loc>")) if code == 200 else str(code))
 code, body = status(SITE + "/robots.txt")
-expect("robots.txt lists the sitemap", code == 200 and "sitemap" in body.lower())
+expect("robots.txt lists the sitemap", code == 200 and "sitemap" in body.lower(), "" if code == 200 else str(code))
 code, _ = status(SITE + "/llms.txt")
 expect("llms.txt present", code == 200, str(code))
 code, _ = status("https://dash.myremoteva.com/register")

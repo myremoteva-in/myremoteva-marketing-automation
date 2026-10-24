@@ -65,4 +65,8 @@ except urllib.error.HTTPError as e:
     if e.code == 429 or e.code >= 500:
         print("Temporary DEV limit or outage; the next scheduled run will retry.")
         sys.exit(0)
+    if e.code in (401, 403):
+        # A rejected key is an owner task, not a code bug. Show it as a warning instead of emailing every 6 hours.
+        print("::warning title=DEV key rejected::DEV returned %d. Create a new key at https://dev.to/settings/extensions and save it as the repository secret DEVTO_API_KEY." % e.code)
+        sys.exit(0)
     sys.exit(1)
