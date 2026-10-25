@@ -2,6 +2,7 @@
 import json
 import os
 import re
+import time
 import urllib.request
 
 HOST = "myremoteva.com"
@@ -12,10 +13,20 @@ INDEXNOW_KEY = "a1f6fdb61f592053b634548f20510f2"  # public key, also served at /
 UA = "myremoteva-marketing-automation/1.0 (+https://myremoteva.com)"
 
 
-def get(url, timeout=60):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+def get(url, timeout=60, tries=3):
+    """Fetch a URL with short retries. GitHub runners sometimes lose their route for a moment ("Network is unreachable"),
+    so wait and try again before giving up; callers decide what a final failure means."""
+    last = None
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=min(timeout, 45)) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as e:  # network errors and HTTP errors alike
+            last = e
+            if attempt < tries - 1:
+                time.sleep(8 * (attempt + 1))
+    raise last
 
 
 def sitemap_entries():

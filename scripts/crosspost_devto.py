@@ -5,11 +5,15 @@ Safety: articles are created as DRAFTS by default, so you read each one and pres
 Set the repository variable DEVTO_PUBLISH=true to publish automatically. The canonical_url points to
 myremoteva.com so search engines treat our page as the original.
 Max 1 new article per run. First run only records what exists.
+
+Failures are explained in the run summary (annotations). A guide that DEV rejects for its own content is recorded
+as skipped so it cannot block the queue; temporary network or DEV problems end the run quietly and the next run retries.
 """
 import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 
 from common import UA, feed_items, load_state, save_state, with_utm
@@ -21,7 +25,18 @@ if not key:
     sys.exit(0)
 publish = os.environ.get("DEVTO_PUBLISH", "false").lower() == "true"
 
-items = feed_items()
+
+def note(level, title, msg):
+    """Print a GitHub annotation so the reason shows on the run page without opening the log."""
+    print("::%s title=%s::%s" % (level, title, " ".join(str(msg).split())[:400]))
+
+
+try:
+    items = feed_items()
+except Exception as e:  # temporary network trouble reaching our own site
+    note("warning", "DEV: feed unavailable", "Could not read feed.xml (%s). The next run will retry." % e)
+    sys.exit(0)
+
 state = load_state(STATE, {"posted": []})
 if not state["posted"]:
     state["posted"] = [i["link"] for i in items]
@@ -42,7 +57,7 @@ for p in paras[:4]:
     if t:
         text.append(t)
 excerpt = "\n\n".join(text)
-body = "%s\n\n**Read the full guide, with the tables and checklists:** [%s](%s)\n\n_Published by [MyRemoteVA](https://myremoteva.com), a managed virtual assistant and bookkeeping support service._" % (
+body = "%s\n\n**Read the full guide, with the tables and checklists:** [%s](%s)\n\n_Published by [MyRemoteVA](https://myremoteva.com), a managed service for admin, bookkeeping, customer support, ecommerce and website work._" % (
     excerpt, it["title"], with_utm(it["link"], "devto", "crosspost"))
 payload = {"article": {
     "title": it["title"][:128],
@@ -61,12 +76,22 @@ try:
         state["posted"].append(it["link"])
         save_state(STATE, state)
 except urllib.error.HTTPError as e:
-    print("DEV API error", e.code, e.read()[:300])
+    detail = e.read()[:400].decode("utf-8", "replace")
+    print("DEV API error", e.code, detail)
     if e.code == 429 or e.code >= 500:
-        print("Temporary DEV limit or outage; the next scheduled run will retry.")
+        note("notice", "DEV busy", "DEV returned %d. The next scheduled run will retry." % e.code)
         sys.exit(0)
     if e.code in (401, 403):
         # A rejected key is an owner task, not a code bug. Show it as a warning instead of emailing every 6 hours.
-        print("::warning title=DEV key rejected::DEV returned %d. Create a new key at https://dev.to/settings/extensions and save it as the repository secret DEVTO_API_KEY." % e.code)
+        note("warning", "DEV key rejected", "DEV returned %d. Create a new key at https://dev.to/settings/extensions and save it as the repository secret DEVTO_API_KEY." % e.code)
         sys.exit(0)
-    sys.exit(1)
+    # Any other 4xx means DEV refused THIS article (for example a duplicate canonical URL or a field it dislikes).
+    # Record it as skipped so it cannot block every later guide.
+    note("warning", "DEV skipped a guide", "DEV returned %d for %s: %s" % (e.code, it["link"], detail))
+    state["posted"].append(it["link"])
+    state.setdefault("skipped", []).append({"link": it["link"], "code": e.code, "detail": detail[:200]})
+    save_state(STATE, state)
+    sys.exit(0)
+except Exception as e:  # timeouts and other network errors are temporary
+    note("notice", "DEV unreachable", "%s. The next scheduled run will retry." % e)
+    sys.exit(0)
