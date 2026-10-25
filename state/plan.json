@@ -2,39 +2,39 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "ab1-hosts",
-      "image": "ab1-hosts.png",
-      "text": "Hosts answer the same ten guest questions all year. Saved answers, a calendar check and a cleaner schedule are easy to hand off. Keys, cleaning and emergencies stay with you or a local co-host.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-airbnb-hosts?utm_source=linkedin&utm_medium=social&utm_campaign=ab1-hosts"
+      "id": "on1-week1",
+      "image": "on1-week1.png",
+      "text": "The first week sets the pattern. Pick three repeat jobs, write one brief for each, review the first results and save your feedback as a checklist. The onboarding checklist has the full list.\n\nhttps://myremoteva.com/blog/virtual-assistant-onboarding-checklist?utm_source=linkedin&utm_medium=social&utm_campaign=on1-week1"
     },
     {
       "channel": "linkedin",
-      "id": "bk1-startup",
-      "image": "bk1-startup.png",
-      "text": "Early books are simple but they pile up. A separate business bank account, a receipt habit and a monthly routine keep them clean. A 30-day plan in the guide shows the order. This is record keeping, not tax advice, so keep an accountant for advice and filings.\n\nhttps://myremoteva.com/blog/outsourced-bookkeeping-for-startups?utm_source=linkedin&utm_medium=social&utm_campaign=bk1-startup"
+      "id": "tb1-brief",
+      "image": "tb1-brief.png",
+      "text": "Most delegation problems are brief problems. A short brief with the goal, the steps, an example and the deadline gets better work than a long call. There is a free fill-in template.\n\nhttps://myremoteva.com/blog/how-to-write-a-task-brief?utm_source=linkedin&utm_medium=social&utm_campaign=tb1-brief"
     },
     {
       "channel": "linkedin",
-      "id": "bk2-monthend",
-      "image": "bk2-monthend.png",
-      "text": "Reconciling the bank is the step that protects every other step in a month-end close. The checklist has all 12 steps and a hand-off table showing what a VA can do and what stays with your accountant.\n\nhttps://myremoteva.com/blog/month-end-bookkeeping-checklist?utm_source=linkedin&utm_medium=social&utm_campaign=bk2-monthend"
+      "id": "ai1-human",
+      "image": "ai1-human.png",
+      "text": "AI is fast at drafts, lists and first passes. A person decides what is right for your business. The guide compares a virtual assistant and an AI assistant task by task, including where AI alone is the better pick.\n\nhttps://myremoteva.com/blog/virtual-assistant-vs-ai-assistant?utm_source=linkedin&utm_medium=social&utm_campaign=ai1-human"
     },
     {
       "channel": "twitter",
-      "id": "ab1-hosts",
-      "image": "ab1-hosts.png",
-      "text": "Hosts answer the same ten guest questions all year. Save the answers, hand off the replies, keep the keys.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-airbnb-hosts?utm_source=x&utm_medium=social&utm_campaign=ab1-hosts"
+      "id": "on1-week1",
+      "image": "on1-week1.png",
+      "text": "First week with an assistant: pick 3 repeat jobs, write one brief each, review, save feedback as a checklist.\n\nhttps://myremoteva.com/blog/virtual-assistant-onboarding-checklist?utm_source=x&utm_medium=social&utm_campaign=on1-week1"
     },
     {
       "channel": "twitter",
-      "id": "bk1-startup",
-      "image": "bk1-startup.png",
-      "text": "Early books pile up fast. A 30-day setup plan: bank account, receipts, monthly routine. Keep an accountant for advice.\n\nhttps://myremoteva.com/blog/outsourced-bookkeeping-for-startups?utm_source=x&utm_medium=social&utm_campaign=bk1-startup"
+      "id": "tb1-brief",
+      "image": "tb1-brief.png",
+      "text": "Most delegation problems are brief problems. Goal, steps, example, deadline. Free template.\n\nhttps://myremoteva.com/blog/how-to-write-a-task-brief?utm_source=x&utm_medium=social&utm_campaign=tb1-brief"
     },
     {
       "channel": "twitter",
-      "id": "bk2-monthend",
-      "image": "bk2-monthend.png",
-      "text": "Month-end close in 12 steps. Step 6, reconcile the bank, protects the other eleven.\n\nhttps://myremoteva.com/blog/month-end-bookkeeping-checklist?utm_source=x&utm_medium=social&utm_campaign=bk2-monthend"
+      "id": "ai1-human",
+      "image": "ai1-human.png",
+      "text": "AI drafts fast. A person decides what is right for your business. A task-by-task comparison.\n\nhttps://myremoteva.com/blog/virtual-assistant-vs-ai-assistant?utm_source=x&utm_medium=social&utm_campaign=ai1-human"
     }
   ]
 }
