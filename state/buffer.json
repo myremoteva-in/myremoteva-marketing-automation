@@ -13,7 +13,8 @@
       "pr2-plans",
       "ab1-hosts",
       "bk1-startup",
-      "bk2-monthend"
+      "bk2-monthend",
+      "on1-week1"
     ],
     "twitter": [
       "ag1-reports",
@@ -28,7 +29,10 @@
       "pr2-plans",
       "ab1-hosts",
       "bk1-startup",
-      "bk2-monthend"
+      "bk2-monthend",
+      "on1-week1",
+      "tb1-brief",
+      "ai1-human"
     ]
   }
 }
