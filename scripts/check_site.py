@@ -2,7 +2,7 @@
 
 Checks: key pages return 200 and contain their key facts, no accidental noindex,
 sitemap and robots.txt healthy, llms.txt present, TLS certificate not close to expiry,
-sign-up and free-trial links work.
+sign-up and $1 plan links work.
 """
 import datetime
 import socket
@@ -76,10 +76,10 @@ code, _ = status(SITE + "/llms.txt")
 expect("llms.txt present", code == 200, str(code))
 code, _ = status("https://dash.myremoteva.com/register")
 expect("sign-up page returns 200", code == 200, str(code))
-code, body = status("https://dash.myremoteva.com/register?plan=39")
-expect("free-trial link returns 200", code == 200, str(code))
+code, body = status("https://dash.myremoteva.com/register?plan=51")
+expect("$1 plan link returns 200", code == 200, str(code))
 if code == 200:
-    expect("free trial is offered on the sign-up page", "free trial" in body.lower())
+    expect("the $1 plan is offered on the sign-up page", "for $1" in body)
 
 try:
     ctx = ssl.create_default_context()
