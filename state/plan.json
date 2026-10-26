@@ -2,12 +2,6 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "on1-week1",
-      "image": "on1-week1.png",
-      "text": "The first week sets the pattern. Pick three repeat jobs, write one brief for each, review the first results and save your feedback as a checklist. The onboarding checklist has the full list.\n\nhttps://myremoteva.com/blog/virtual-assistant-onboarding-checklist?utm_source=linkedin&utm_medium=social&utm_campaign=on1-week1"
-    },
-    {
-      "channel": "linkedin",
       "id": "tb1-brief",
       "image": "tb1-brief.png",
       "text": "Most delegation problems are brief problems. A short brief with the goal, the steps, an example and the deadline gets better work than a long call. There is a free fill-in template.\n\nhttps://myremoteva.com/blog/how-to-write-a-task-brief?utm_source=linkedin&utm_medium=social&utm_campaign=tb1-brief"
@@ -19,22 +13,28 @@
       "text": "AI is fast at drafts, lists and first passes. A person decides what is right for your business. The guide compares a virtual assistant and an AI assistant task by task, including where AI alone is the better pick.\n\nhttps://myremoteva.com/blog/virtual-assistant-vs-ai-assistant?utm_source=linkedin&utm_medium=social&utm_campaign=ai1-human"
     },
     {
-      "channel": "twitter",
-      "id": "on1-week1",
-      "image": "on1-week1.png",
-      "text": "First week with an assistant: pick 3 repeat jobs, write one brief each, review, save feedback as a checklist.\n\nhttps://myremoteva.com/blog/virtual-assistant-onboarding-checklist?utm_source=x&utm_medium=social&utm_campaign=on1-week1"
+      "channel": "linkedin",
+      "id": "em1-calc",
+      "image": "em1-calc.png",
+      "text": "Compare the true cost of a local hire with a virtual assistant using your own numbers. Enter your hours, your local rate and your extra costs, and the calculator shows both side by side.\n\nhttps://myremoteva.com/va-vs-employee?utm_source=linkedin&utm_medium=social&utm_campaign=em1-calc"
     },
     {
       "channel": "twitter",
-      "id": "tb1-brief",
-      "image": "tb1-brief.png",
-      "text": "Most delegation problems are brief problems. Goal, steps, example, deadline. Free template.\n\nhttps://myremoteva.com/blog/how-to-write-a-task-brief?utm_source=x&utm_medium=social&utm_campaign=tb1-brief"
+      "id": "em1-calc",
+      "image": "em1-calc.png",
+      "text": "Compare a local hire with a virtual assistant using your own numbers. Free calculator.\n\nhttps://myremoteva.com/va-vs-employee?utm_source=x&utm_medium=social&utm_campaign=em1-calc"
     },
     {
       "channel": "twitter",
-      "id": "ai1-human",
-      "image": "ai1-human.png",
-      "text": "AI drafts fast. A person decides what is right for your business. A task-by-task comparison.\n\nhttps://myremoteva.com/blog/virtual-assistant-vs-ai-assistant?utm_source=x&utm_medium=social&utm_campaign=ai1-human"
+      "id": "tz1-zones",
+      "image": "tz1-zones.png",
+      "text": "Time zone overlap matters more than the hourly rate. A free planner shows the overlap for your city.\n\nhttps://myremoteva.com/time-zones?utm_source=x&utm_medium=social&utm_campaign=tz1-zones"
+    },
+    {
+      "channel": "twitter",
+      "id": "tr1-trial",
+      "image": "tr1-trial.png",
+      "text": "Try 3 hours free first. The trial runs for 2 days, then the plan you choose starts.\n\nhttps://myremoteva.com/pricing?utm_source=x&utm_medium=social&utm_campaign=tr1-trial"
     }
   ]
 }
