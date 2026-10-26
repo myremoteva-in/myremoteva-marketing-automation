@@ -7,7 +7,7 @@ Free GitHub Actions that keep [myremoteva.com](https://myremoteva.com) healthy, 
 | Workflow | When | What it does | Secret needed |
 |---|---|---|---|
 | IndexNow ping | daily | Sends new and changed sitemap URLs to Bing, Yandex and other IndexNow search engines, so new guides are crawled in hours instead of weeks | none |
-| Site health check | every 6 hours | Checks key pages, key facts, noindex tags, sitemap, robots.txt, llms.txt, the sign-up and free-trial links and the TLS certificate. A failure emails the repo owner | none |
+| Site health check | every 6 hours | Checks key pages, key facts, noindex tags, sitemap, robots.txt, llms.txt, the sign-up and $1 plan links and the TLS certificate. A failure emails the repo owner | none |
 | Post new guides to Bluesky | every 2 hours | Posts each new guide once, with a UTM link (max 3 a day). Never follows, likes, replies or messages anyone | BLUESKY_HANDLE, BLUESKY_APP_PASSWORD |
 | Cross-post to DEV | every 6 hours | Creates a DEV article from each new guide as a draft, with a canonical link to the original on myremoteva.com | DEVTO_API_KEY |
 | Weekly site report | Mondays | Checks every sitemap URL, lists errors and noindex pages, opens an Issue with the week's to-do list, pings IndexNow | none |
