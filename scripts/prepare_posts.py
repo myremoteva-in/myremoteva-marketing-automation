@@ -2,8 +2,8 @@
 No AI is involved. Content comes from social/bank.json (hand-written, checked posts) and, once those are used up,
 from our own published guides (title and summary from the site's RSS feed), so every claim is already on our site.
 
-Env: PER_CHANNEL (posts per channel per run, default 3), DRY_RUN=1 (no state changes).
-Each channel (linkedin, twitter) keeps its own list of used ids, so the plan never repeats a post on a channel.
+Env: PER_CHANNEL (posts per channel per run, default 3), PER_FACEBOOK (default 1: one a day on the Facebook page), DRY_RUN=1 (no state changes).
+Each channel (linkedin, twitter, facebook) keeps its own list of used ids, so the plan never repeats a post on a channel.
 """
 import hashlib
 import json
@@ -15,13 +15,14 @@ from cartoon import make_cartoon, STYLES
 from common import feed_items, load_state, save_state, with_utm
 
 PER = int(os.environ.get("PER_CHANNEL", "3"))
-CHANNELS = ["linkedin", "twitter"]
+CHANNELS = ["linkedin", "twitter", "facebook"]
+PER_FB = int(os.environ.get("PER_FACEBOOK", "1"))
 STATE = "state/buffer.json"
 OUT = "social/out"
 SCENES = ["inbox", "sheet", "calendar", "mail", "invoice", "chart", "clock", "robot"]
 
 bank = json.load(open("social/bank.json", encoding="utf-8"))
-state = load_state(STATE, {"used": {"linkedin": [], "twitter": []}})
+state = load_state(STATE, {"used": {"linkedin": [], "twitter": [], "facebook": []}})
 for c in CHANNELS:
     state["used"].setdefault(c, [])
 
@@ -57,10 +58,11 @@ def items():
 pool = items()
 plan = []
 for ch in CHANNELS:
-    picked = [p for p in pool if p["id"] not in state["used"][ch]][:PER]
+    per = PER_FB if ch == "facebook" else PER
+    picked = [p for p in pool if p["id"] not in state["used"][ch]][:per]
     if not picked:
         state["used"][ch] = []  # everything used once: start over
-        picked = pool[:PER]
+        picked = pool[:per]
     for p in picked:
         plan.append({"channel": ch, "id": p["id"]})
         os.makedirs(OUT, exist_ok=True)
@@ -74,8 +76,9 @@ lookup = {p["id"]: p for p in pool}
 detail = []
 for e in plan:
     p = lookup[e["id"]]
-    link = with_utm(p["link"], "linkedin" if e["channel"] == "linkedin" else "x", p["id"])
-    text = (p["li"] + "\n\n" + link) if e["channel"] == "linkedin" else (short(p["x"], 220) + "\n\n" + link)
+    src = {"linkedin": "linkedin", "twitter": "x", "facebook": "facebook"}[e["channel"]]
+    link = with_utm(p["link"], src, p["id"])
+    text = (short(p["x"], 220) + "\n\n" + link) if e["channel"] == "twitter" else (p["li"] + "\n\n" + link)
     detail.append({"channel": e["channel"], "id": e["id"], "text": text, "image": e["id"] + ".png"})
 
 if os.environ.get("DRY_RUN") == "1":

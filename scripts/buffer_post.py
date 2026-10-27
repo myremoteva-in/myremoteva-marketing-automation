@@ -22,7 +22,8 @@ if not KEY:
 REPO = os.environ.get("GITHUB_REPOSITORY", "myremoteva-in/myremoteva-marketing-automation")
 RAW = "https://raw.githubusercontent.com/%s/main/social/out/" % REPO
 plan = load_state("state/plan.json", {"posts": []})["posts"]
-state = load_state("state/buffer.json", {"used": {"linkedin": [], "twitter": []}})
+state = load_state("state/buffer.json", {"used": {"linkedin": [], "twitter": [], "facebook": []}})
+state["used"].setdefault("facebook", [])
 
 
 def gql(query):
@@ -46,7 +47,7 @@ for o in orgs["data"]["account"]["organizations"]:
         channels.setdefault(c["service"].lower(), []).append(c)
 print("Buffer channels:", {k: [c["name"] for c in v] for k, v in channels.items()})
 
-wanted = {"linkedin": "linkedin", "twitter": "twitter"}
+wanted = {"linkedin": "linkedin", "twitter": "twitter", "facebook": "facebook"}
 full = set()
 sent = 0
 for p in plan:
