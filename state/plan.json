@@ -2,12 +2,6 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "tb1-brief",
-      "image": "tb1-brief.png",
-      "text": "Most delegation problems are brief problems. A short brief with the goal, the steps, an example and the deadline gets better work than a long call. There is a free fill-in template.\n\nhttps://myremoteva.com/blog/how-to-write-a-task-brief?utm_source=linkedin&utm_medium=social&utm_campaign=tb1-brief"
-    },
-    {
-      "channel": "linkedin",
       "id": "ai1-human",
       "image": "ai1-human.png",
       "text": "AI is fast at drafts, lists and first passes. A person decides what is right for your business. The guide compares a virtual assistant and an AI assistant task by task, including where AI alone is the better pick.\n\nhttps://myremoteva.com/blog/virtual-assistant-vs-ai-assistant?utm_source=linkedin&utm_medium=social&utm_campaign=ai1-human"
@@ -19,22 +13,34 @@
       "text": "Compare the true cost of a local hire with a virtual assistant using your own numbers. Enter your hours, your local rate and your extra costs, and the calculator shows both side by side.\n\nhttps://myremoteva.com/va-vs-employee?utm_source=linkedin&utm_medium=social&utm_campaign=em1-calc"
     },
     {
-      "channel": "twitter",
-      "id": "em1-calc",
-      "image": "em1-calc.png",
-      "text": "Compare a local hire with a virtual assistant using your own numbers. Free calculator.\n\nhttps://myremoteva.com/va-vs-employee?utm_source=x&utm_medium=social&utm_campaign=em1-calc"
-    },
-    {
-      "channel": "twitter",
+      "channel": "linkedin",
       "id": "tz1-zones",
       "image": "tz1-zones.png",
-      "text": "Time zone overlap matters more than the hourly rate. A free planner shows the overlap for your city.\n\nhttps://myremoteva.com/time-zones?utm_source=x&utm_medium=social&utm_campaign=tz1-zones"
+      "text": "Time zone overlap matters more than the hourly rate. Our team works from Kerala, India and plans shifts around your working day. The free planner shows the overlap for your city, with daylight saving handled.\n\nhttps://myremoteva.com/time-zones?utm_source=linkedin&utm_medium=social&utm_campaign=tz1-zones"
     },
     {
       "channel": "twitter",
-      "id": "tr1-trial",
-      "image": "tr1-trial.png",
-      "text": "Try 3 hours free first. The trial runs for 2 days, then the plan you choose starts.\n\nhttps://myremoteva.com/pricing?utm_source=x&utm_medium=social&utm_campaign=tr1-trial"
+      "id": "ca1-calc",
+      "image": "ca1-calc.png",
+      "text": "Hours in, cheapest plan out. Free calculator, no sign-up.\n\nhttps://myremoteva.com/cost-calculator?utm_source=x&utm_medium=social&utm_campaign=ca1-calc"
+    },
+    {
+      "channel": "twitter",
+      "id": "ev1-check",
+      "image": "ev1-check.png",
+      "text": "Ten things to check before you pay any virtual assistant provider. Free checklist.\n\nhttps://myremoteva.com/blog/virtual-assistant-evaluation-checklist?utm_source=x&utm_medium=social&utm_campaign=ev1-check"
+    },
+    {
+      "channel": "twitter",
+      "id": "wh1-where",
+      "image": "wh1-where.png",
+      "text": "Job board, marketplace, agency or managed service? One table compares the four ways to hire.\n\nhttps://myremoteva.com/blog/best-place-to-hire-a-virtual-assistant?utm_source=x&utm_medium=social&utm_campaign=wh1-where"
+    },
+    {
+      "channel": "facebook",
+      "id": "ag1-reports",
+      "image": "ag1-reports.png",
+      "text": "Client reports are the most common thing that eats an agency's Friday. The numbers live in five tools and the layout never changes.\n\nThat is a good job to hand off: an assistant pulls the numbers into your template, you review and send. Start with one client for one month and see how many hours come back.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-marketing-agencies?utm_source=facebook&utm_medium=social&utm_campaign=ag1-reports"
     }
   ]
 }
