@@ -1,5 +1,6 @@
 {
   "used": {
+    "facebook": [],
     "linkedin": [
       "ag1-reports",
       "ag2-invoices",
@@ -15,7 +16,9 @@
       "bk1-startup",
       "bk2-monthend",
       "on1-week1",
-      "tb1-brief"
+      "tb1-brief",
+      "ai1-human",
+      "em1-calc"
     ],
     "twitter": [
       "ag1-reports",
@@ -36,7 +39,10 @@
       "ai1-human",
       "em1-calc",
       "tz1-zones",
-      "tr1-trial"
+      "tr1-trial",
+      "ca1-calc",
+      "ev1-check",
+      "wh1-where"
     ]
   }
 }
