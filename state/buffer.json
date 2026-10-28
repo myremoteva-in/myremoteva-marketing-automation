@@ -1,6 +1,8 @@
 {
   "used": {
-    "facebook": [],
+    "facebook": [
+      "e02-cat"
+    ],
     "linkedin": [
       "ag1-reports",
       "ag2-invoices",
@@ -23,7 +25,8 @@
       "tr1-trial",
       "ca1-calc",
       "t01-time-sum",
-      "e02-cat"
+      "e02-cat",
+      "e03-bear"
     ],
     "twitter": [
       "ag1-reports",
@@ -52,7 +55,8 @@
       "ec1-store",
       "ca2-canada",
       "t01-time-sum",
-      "e02-cat"
+      "e02-cat",
+      "e03-bear"
     ]
   }
 }
