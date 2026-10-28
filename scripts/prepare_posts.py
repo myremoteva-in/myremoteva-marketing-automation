@@ -1,5 +1,5 @@
 """Step 1 of the Buffer automation (v2, 28 Oct 2026): choose the next hand-written post for each channel.
-Only social/bank2.json is used: hand-written, fact-checked posts. There is NO fallback to feed summaries and NO repeats:
+Only social/bank3.json (image posts, each with image_file in social/out) is used: hand-written, fact-checked posts. There is NO fallback to feed summaries and NO repeats:
 when a channel runs out, the run says so and queues nothing (add posts to the bank).
 Rules (UTC weekday, Monday = 0): LinkedIn is queued on Mon, Tue, Wed (Buffer sends Tue, Wed, Thu at 13:30 UTC);
 X is queued Mon to Fri (one a day); Facebook every day (one a day).
@@ -17,7 +17,7 @@ STATE = "state/buffer.json"
 OUT = "social/out"
 CHANNELS = ["linkedin", "twitter", "facebook"]
 
-bank = json.load(open("social/bank2.json", encoding="utf-8"))
+bank = json.load(open("social/bank3.json", encoding="utf-8"))
 state = load_state(STATE, {"used": {"linkedin": [], "twitter": [], "facebook": []}})
 for c in CHANNELS:
     state["used"].setdefault(c, [])
@@ -38,8 +38,8 @@ for ch in CHANNELS:
     text = p["x"] if ch == "twitter" else p["li"]
     if p.get("url"):
         text += "\n\n" + p["url"]
-    image = None
-    if p.get("scene"):
+    image = p.get("image_file")
+    if not image and p.get("scene"):
         from cartoon import make_cartoon
         os.makedirs(OUT, exist_ok=True)
         image = p["id"] + ".png"
