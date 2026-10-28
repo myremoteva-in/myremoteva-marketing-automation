@@ -60,9 +60,10 @@ for p in plan:
     if p["id"] in state["used"][p["channel"]]:
         continue
     text = json.dumps(p["text"])
-    q = ('mutation { createPost(input: { text: %s, channelId: "%s", schedulingType: automatic, mode: addToQueue, '
-         'assets: [{ image: { url: "%s" } }] }) { ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }'
-         % (text, channels[svc][0]["id"], RAW + p["image"]))
+    assets = ('assets: [{ image: { url: "%s" } }] ' % (RAW + p["image"])) if p.get("image") else ""
+    q = ('mutation { createPost(input: { text: %s, channelId: "%s", schedulingType: automatic, mode: addToQueue, %s'
+         '}) { ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }'
+         % (text, channels[svc][0]["id"], assets))
     res = gql(q)
     out = (res.get("data") or {}).get("createPost") or {}
     if out.get("post"):

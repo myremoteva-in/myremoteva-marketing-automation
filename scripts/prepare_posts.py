@@ -1,88 +1,56 @@
-"""Step 1 of the daily Buffer automation: choose the next posts, draw their cartoons, write state/plan.json.
-No AI is involved. Content comes from social/bank.json (hand-written, checked posts) and, once those are used up,
-from our own published guides (title and summary from the site's RSS feed), so every claim is already on our site.
-
-Env: PER_CHANNEL (posts per channel per run, default 3), PER_FACEBOOK (default 1: one a day on the Facebook page), DRY_RUN=1 (no state changes).
-Each channel (linkedin, twitter, facebook) keeps its own list of used ids, so the plan never repeats a post on a channel.
+"""Step 1 of the Buffer automation (v2, 28 Oct 2026): choose the next hand-written post for each channel.
+Only social/bank2.json is used: hand-written, fact-checked posts. There is NO fallback to feed summaries and NO repeats:
+when a channel runs out, the run says so and queues nothing (add posts to the bank).
+Rules (UTC weekday, Monday = 0): LinkedIn is queued on Mon, Tue, Wed (Buffer sends Tue, Wed, Thu at 13:30 UTC);
+X is queued Mon to Fri (one a day); Facebook every day (one a day).
+Posts carry no link by default (links reduce reach). Optional keys: "scene"/"speech"/"style" draw a cartoon image; "url" adds a link.
+Env: FORCE_WEEKDAY (testing), DRY_RUN=1 (no state changes).
 """
-import hashlib
+import datetime
 import json
 import os
-import re
 import sys
 
-from cartoon import make_cartoon, STYLES
-from common import feed_items, load_state, save_state, with_utm
+from common import load_state, save_state
 
-PER = int(os.environ.get("PER_CHANNEL", "3"))
-CHANNELS = ["linkedin", "twitter", "facebook"]
-PER_FB = int(os.environ.get("PER_FACEBOOK", "1"))
 STATE = "state/buffer.json"
 OUT = "social/out"
-SCENES = ["inbox", "sheet", "calendar", "mail", "invoice", "chart", "clock", "robot"]
+CHANNELS = ["linkedin", "twitter", "facebook"]
 
-bank = json.load(open("social/bank.json", encoding="utf-8"))
+bank = json.load(open("social/bank2.json", encoding="utf-8"))
 state = load_state(STATE, {"used": {"linkedin": [], "twitter": [], "facebook": []}})
 for c in CHANNELS:
     state["used"].setdefault(c, [])
 
+wd = int(os.environ.get("FORCE_WEEKDAY", datetime.datetime.utcnow().weekday()))
+today = {"linkedin": wd in (0, 1, 2), "twitter": wd <= 4, "facebook": True}
 
-def short(s, n):
-    s = re.sub(r"\s+", " ", s).strip()
-    if len(s) <= n:
-        return s
-    return s[: n - 1].rsplit(" ", 1)[0].rstrip(",;:.") + "..."
-
-
-def items():
-    out = list(bank)
-    try:
-        for it in feed_items()[:60]:
-            slug = it["link"].rstrip("/").split("/")[-1]
-            h = int(hashlib.md5(slug.encode()).hexdigest(), 16)
-            desc = short(it["desc"], 420)
-            out.append({
-                "id": "g-" + slug,
-                "scene": SCENES[h % len(SCENES)],
-                "style": list(STYLES)[h % len(STYLES)],
-                "speech": short(it["title"], 95),
-                "li": desc,
-                "x": short("New guide: " + it["title"], 200),
-                "link": it["link"],
-            })
-    except Exception as e:  # feed down: bank only
-        print("feed unavailable:", e)
-    return out
-
-
-pool = items()
-plan = []
-for ch in CHANNELS:
-    per = PER_FB if ch == "facebook" else PER
-    picked = [p for p in pool if p["id"] not in state["used"][ch]][:per]
-    if not picked:
-        state["used"][ch] = []  # everything used once: start over
-        picked = pool[:per]
-    for p in picked:
-        plan.append({"channel": ch, "id": p["id"]})
-        os.makedirs(OUT, exist_ok=True)
-        path = os.path.join(OUT, p["id"] + ".png")
-        if not os.path.exists(path):
-            make_cartoon(path, p["speech"], p.get("scene", "inbox"), p.get("style", "sweater1"))
-        p["_path"] = path
-    print(ch, "->", [p["id"] for p in picked])
-
-lookup = {p["id"]: p for p in pool}
 detail = []
-for e in plan:
-    p = lookup[e["id"]]
-    src = {"linkedin": "linkedin", "twitter": "x", "facebook": "facebook"}[e["channel"]]
-    link = with_utm(p["link"], src, p["id"])
-    text = (short(p["x"], 220) + "\n\n" + link) if e["channel"] == "twitter" else (p["li"] + "\n\n" + link)
-    detail.append({"channel": e["channel"], "id": e["id"], "text": text, "image": e["id"] + ".png"})
+for ch in CHANNELS:
+    if not today[ch]:
+        print(ch, "-> not queued on this weekday")
+        continue
+    nxt = [p for p in bank if p["id"] not in state["used"][ch]]
+    if not nxt:
+        print("::warning::%s: the post bank is empty. Add new posts to social/bank2.json. Nothing queued." % ch)
+        continue
+    p = nxt[0]
+    text = p["x"] if ch == "twitter" else p["li"]
+    if p.get("url"):
+        text += "\n\n" + p["url"]
+    image = None
+    if p.get("scene"):
+        from cartoon import make_cartoon
+        os.makedirs(OUT, exist_ok=True)
+        image = p["id"] + ".png"
+        path = os.path.join(OUT, image)
+        if not os.path.exists(path):
+            make_cartoon(path, p.get("speech", ""), p["scene"], p.get("style", "sweater1"))
+    detail.append({"channel": ch, "id": p["id"], "text": text, "image": image})
+    print(ch, "->", p["id"], "(%d left after this)" % (len(nxt) - 1))
 
 if os.environ.get("DRY_RUN") == "1":
-    print(json.dumps(detail[:2], indent=1))
+    print(json.dumps(detail, indent=1, ensure_ascii=False)[:1500])
     sys.exit(0)
 save_state("state/plan.json", {"posts": detail})
 print("plan written with %d posts" % len(detail))
