@@ -2,45 +2,21 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "tz1-zones",
-      "image": "tz1-zones.png",
-      "text": "Time zone overlap matters more than the hourly rate. Our team works from Kerala, India and plans shifts around your working day. The free planner shows the overlap for your city, with daylight saving handled.\n\nhttps://myremoteva.com/time-zones?utm_source=linkedin&utm_medium=social&utm_campaign=tz1-zones"
-    },
-    {
-      "channel": "linkedin",
-      "id": "tr1-trial",
-      "image": "tr1-trial.png",
-      "text": "If you have never delegated before, test with real work. The $1 plan adds one hour of VA work to your account every month for new registrations. Pick one small repeat task and judge the result. Prices are in US dollars.\n\nhttps://myremoteva.com/pricing?utm_source=linkedin&utm_medium=social&utm_campaign=tr1-trial"
-    },
-    {
-      "channel": "linkedin",
-      "id": "ca1-calc",
-      "image": "ca1-calc.png",
-      "text": "Enter your hours per month and the calculator shows the cheapest plan across pay-as-you-go, blocks, quarterly packs and the dedicated plans. It works without signing up.\n\nhttps://myremoteva.com/cost-calculator?utm_source=linkedin&utm_medium=social&utm_campaign=ca1-calc"
+      "id": "t01-time-sum",
+      "image": null,
+      "text": "Quick sum for founders.\n\nHours a week you spend on admin: 6\nWeeks in a month: about 4.3\nWhat an hour of your time is worth: say $60\n\n6 x 4.3 x $60 = $1,548 a month of your time on inbox, invoices and scheduling.\n\nFor comparison, 80 hours a month of a dedicated assistant is $500.\n\nThis is not a promise of savings. It is a way to put a price on the hours you give away.\n\nWhat number do you get?\n\n#SmallBusiness #Delegation"
     },
     {
       "channel": "twitter",
-      "id": "ch1-cheap",
-      "image": "ch1-cheap.png",
-      "text": "The cheapest hourly rate is not the cheapest bill. Count rework, training and cover.\n\nhttps://myremoteva.com/blog/cheap-virtual-assistant-services?utm_source=x&utm_medium=social&utm_campaign=ch1-cheap"
-    },
-    {
-      "channel": "twitter",
-      "id": "ec1-store",
-      "image": "ec1-store.png",
-      "text": "Listings, orders and customer messages follow written rules. Hand off the repeat parts, keep the decisions.\n\nhttps://myremoteva.com/blog/ecommerce-virtual-assistant-checklist?utm_source=x&utm_medium=social&utm_campaign=ec1-store"
-    },
-    {
-      "channel": "twitter",
-      "id": "ca2-canada",
-      "image": "ca2-canada.png",
-      "text": "9 am in Toronto is 7:30 pm in Kerala in January. Evening shifts give a good overlap with Canadian business hours.\n\nhttps://myremoteva.com/blog/hire-a-virtual-assistant-in-canada?utm_source=x&utm_medium=social&utm_campaign=ca2-canada"
+      "id": "t01-time-sum",
+      "image": null,
+      "text": "6 hours a week on admin x 4.3 weeks x $60 an hour = $1,548 a month of your own time. What is your number?"
     },
     {
       "channel": "facebook",
-      "id": "ag1-reports",
-      "image": "ag1-reports.png",
-      "text": "Client reports are the most common thing that eats an agency's Friday. The numbers live in five tools and the layout never changes.\n\nThat is a good job to hand off: an assistant pulls the numbers into your template, you review and send. Start with one client for one month and see how many hours come back.\n\nhttps://myremoteva.com/blog/virtual-assistant-for-marketing-agencies?utm_source=facebook&utm_medium=social&utm_campaign=ag1-reports"
+      "id": "t01-time-sum",
+      "image": null,
+      "text": "Quick sum for founders.\n\nHours a week you spend on admin: 6\nWeeks in a month: about 4.3\nWhat an hour of your time is worth: say $60\n\n6 x 4.3 x $60 = $1,548 a month of your time on inbox, invoices and scheduling.\n\nFor comparison, 80 hours a month of a dedicated assistant is $500.\n\nThis is not a promise of savings. It is a way to put a price on the hours you give away.\n\nWhat number do you get?\n\n#SmallBusiness #Delegation"
     }
   ]
 }
