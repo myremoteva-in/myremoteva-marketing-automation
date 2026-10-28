@@ -22,7 +22,8 @@
       "tz1-zones",
       "tr1-trial",
       "ca1-calc",
-      "t01-time-sum"
+      "t01-time-sum",
+      "e02-cat"
     ],
     "twitter": [
       "ag1-reports",
@@ -50,7 +51,8 @@
       "ch1-cheap",
       "ec1-store",
       "ca2-canada",
-      "t01-time-sum"
+      "t01-time-sum",
+      "e02-cat"
     ]
   }
 }
