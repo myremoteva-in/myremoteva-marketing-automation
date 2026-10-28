@@ -2,39 +2,39 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "ai1-human",
-      "image": "ai1-human.png",
-      "text": "AI is fast at drafts, lists and first passes. A person decides what is right for your business. The guide compares a virtual assistant and an AI assistant task by task, including where AI alone is the better pick.\n\nhttps://myremoteva.com/blog/virtual-assistant-vs-ai-assistant?utm_source=linkedin&utm_medium=social&utm_campaign=ai1-human"
-    },
-    {
-      "channel": "linkedin",
-      "id": "em1-calc",
-      "image": "em1-calc.png",
-      "text": "Compare the true cost of a local hire with a virtual assistant using your own numbers. Enter your hours, your local rate and your extra costs, and the calculator shows both side by side.\n\nhttps://myremoteva.com/va-vs-employee?utm_source=linkedin&utm_medium=social&utm_campaign=em1-calc"
-    },
-    {
-      "channel": "linkedin",
       "id": "tz1-zones",
       "image": "tz1-zones.png",
       "text": "Time zone overlap matters more than the hourly rate. Our team works from Kerala, India and plans shifts around your working day. The free planner shows the overlap for your city, with daylight saving handled.\n\nhttps://myremoteva.com/time-zones?utm_source=linkedin&utm_medium=social&utm_campaign=tz1-zones"
     },
     {
-      "channel": "twitter",
+      "channel": "linkedin",
+      "id": "tr1-trial",
+      "image": "tr1-trial.png",
+      "text": "If you have never delegated before, test with real work. The $1 plan adds one hour of VA work to your account every month for new registrations. Pick one small repeat task and judge the result. Prices are in US dollars.\n\nhttps://myremoteva.com/pricing?utm_source=linkedin&utm_medium=social&utm_campaign=tr1-trial"
+    },
+    {
+      "channel": "linkedin",
       "id": "ca1-calc",
       "image": "ca1-calc.png",
-      "text": "Hours in, cheapest plan out. Free calculator, no sign-up.\n\nhttps://myremoteva.com/cost-calculator?utm_source=x&utm_medium=social&utm_campaign=ca1-calc"
+      "text": "Enter your hours per month and the calculator shows the cheapest plan across pay-as-you-go, blocks, quarterly packs and the dedicated plans. It works without signing up.\n\nhttps://myremoteva.com/cost-calculator?utm_source=linkedin&utm_medium=social&utm_campaign=ca1-calc"
     },
     {
       "channel": "twitter",
-      "id": "ev1-check",
-      "image": "ev1-check.png",
-      "text": "Ten things to check before you pay any virtual assistant provider. Free checklist.\n\nhttps://myremoteva.com/blog/virtual-assistant-evaluation-checklist?utm_source=x&utm_medium=social&utm_campaign=ev1-check"
+      "id": "ch1-cheap",
+      "image": "ch1-cheap.png",
+      "text": "The cheapest hourly rate is not the cheapest bill. Count rework, training and cover.\n\nhttps://myremoteva.com/blog/cheap-virtual-assistant-services?utm_source=x&utm_medium=social&utm_campaign=ch1-cheap"
     },
     {
       "channel": "twitter",
-      "id": "wh1-where",
-      "image": "wh1-where.png",
-      "text": "Job board, marketplace, agency or managed service? One table compares the four ways to hire.\n\nhttps://myremoteva.com/blog/best-place-to-hire-a-virtual-assistant?utm_source=x&utm_medium=social&utm_campaign=wh1-where"
+      "id": "ec1-store",
+      "image": "ec1-store.png",
+      "text": "Listings, orders and customer messages follow written rules. Hand off the repeat parts, keep the decisions.\n\nhttps://myremoteva.com/blog/ecommerce-virtual-assistant-checklist?utm_source=x&utm_medium=social&utm_campaign=ec1-store"
+    },
+    {
+      "channel": "twitter",
+      "id": "ca2-canada",
+      "image": "ca2-canada.png",
+      "text": "9 am in Toronto is 7:30 pm in Kerala in January. Evening shifts give a good overlap with Canadian business hours.\n\nhttps://myremoteva.com/blog/hire-a-virtual-assistant-in-canada?utm_source=x&utm_medium=social&utm_campaign=ca2-canada"
     },
     {
       "channel": "facebook",
