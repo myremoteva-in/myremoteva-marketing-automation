@@ -61,9 +61,10 @@ for p in plan:
         continue
     text = json.dumps(p["text"])
     assets = ('assets: [{ image: { url: "%s" } }] ' % (RAW + p["image"])) if p.get("image") else ""
-    q = ('mutation { createPost(input: { text: %s, channelId: "%s", schedulingType: automatic, mode: addToQueue, %s'
+    meta = "metadata: { facebook: { type: post } } " if svc == "facebook" else ""
+    q = ('mutation { createPost(input: { text: %s, channelId: "%s", schedulingType: automatic, mode: addToQueue, %s%s'
          '}) { ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }'
-         % (text, channels[svc][0]["id"], assets))
+         % (text, channels[svc][0]["id"], assets, meta))
     res = gql(q)
     out = (res.get("data") or {}).get("createPost") or {}
     if out.get("post"):
