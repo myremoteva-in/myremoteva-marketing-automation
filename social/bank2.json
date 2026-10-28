@@ -1,0 +1,182 @@
+[
+ {
+  "id": "t01-time-sum",
+  "pillar": "time cost",
+  "li": "Quick sum for founders.\n\nHours a week you spend on admin: 6\nWeeks in a month: about 4.3\nWhat an hour of your time is worth: say $60\n\n6 x 4.3 x $60 = $1,548 a month of your time on inbox, invoices and scheduling.\n\nFor comparison, 80 hours a month of a dedicated assistant is $500.\n\nThis is not a promise of savings. It is a way to put a price on the hours you give away.\n\nWhat number do you get?\n\n#SmallBusiness #Delegation",
+  "x": "6 hours a week on admin x 4.3 weeks x $60 an hour = $1,548 a month of your own time. What is your number?"
+ },
+ {
+  "id": "t02-three-fears",
+  "pillar": "fears",
+  "li": "Three reasons owners do not delegate, and a small fix for each.\n\n1. \"Explaining takes longer than doing it.\"\nWrite the task once as a 5-line brief. Reuse it every time.\n\n2. \"It will come back wrong.\"\nAsk who checks the work before you see it. Choose a service with a review step.\n\n3. \"I will lose control.\"\nGive access to one tool and one task for one week. Widen it later.\n\nWhich of the three has stopped you?\n\n#Delegation #SmallBusiness",
+  "x": "Why owners do not delegate: explaining takes too long, it will come back wrong, I will lose control. Each has a small fix. Which one stops you?"
+ },
+ {
+  "id": "t03-one-task",
+  "pillar": "start small",
+  "li": "Do not hire an assistant. Hand off one task.\n\nPick the task you have put off for three weeks. Write five lines: what, when, where the files are, what done looks like, who to ask.\n\nGive it for one week.\n\nIf the result is good, add a second task. If it is not, you learned what to fix in the brief, not in your business.\n\nWhat is the task you keep putting off?\n\n#Delegation #Productivity",
+  "x": "Do not hire an assistant. Hand off one task you have put off for three weeks. Judge the result after a week. What would your task be?"
+ },
+ {
+  "id": "t04-price-check",
+  "pillar": "data",
+  "li": "We read five virtual assistant providers' own pricing pages on 28 October 2026.\n\nWhat they publish, turned into an hourly figure:\n\nTime etc: $36 to $39 an hour (as stated)\nBoldly: about $65 (our arithmetic)\nPrialto: about $29 if all 55 hours are used (our arithmetic)\nStealth Agents: about $10 on a 160-hour month (our arithmetic)\nBelay: no price published\n\nOurs: $5.62 to $12. The trade-off is location. Our team is in Kerala, India, and several of the others say their assistants are US-based.\n\nThe full table with sources is at myremoteva.com/best-virtual-assistant-services.\n\nWhich matters more to you, price or location?\n\n#VirtualAssistant #Pricing",
+  "x": "We read 5 virtual assistant providers' public prices (28 Oct 2026). Hourly cost works out from about $10 to $65, and one publishes no price. Ours: $5.62 to $12, team in India. Price or location: which matters more?"
+ },
+ {
+  "id": "t05-brief",
+  "pillar": "template",
+  "li": "The 5-line task brief.\n\n1. What: one sentence.\n2. When: due date, and how often it repeats.\n3. Where: the folder, sheet or tool.\n4. Done looks like: one example.\n5. Ask: who to message if stuck.\n\nLine 4 does the most work. An example of \"done\" removes most of the guessing.\n\nWould you add a sixth line?\n\n#Delegation #Operations",
+  "x": "The 5-line task brief: what, when, where, what done looks like, who to ask. Line 4 does the most work. Would you add a sixth?"
+ },
+ {
+  "id": "t06-monday",
+  "pillar": "scenario",
+  "li": "An illustrative Monday for an agency owner who does everything.\n\n8:00 Inbox, 41 emails.\n9:00 A client report that needs numbers from four tools.\n11:00 An invoice to chase.\n2:00 The proposal they meant to write last week.\n\nThree of those four do not need the owner's judgment. All four need the owner's time.\n\nHand off the first three. Keep the proposal.\n\nWhich of these would you hand off first?\n\n#AgencyLife #Delegation",
+  "x": "A Monday for an agency owner: inbox, a client report, an invoice to chase, the proposal. Three of four do not need your judgment. Which would you hand off first?"
+ },
+ {
+  "id": "t07-review-step",
+  "pillar": "trust",
+  "li": "Who checks the work before it reaches you?\n\nIt is the question we would ask any provider, including us.\n\nAt MyRemoteVA the assistant uses AI to draft faster, a person rewrites and checks it, and a team lead reviews every task before delivery.\n\nIt adds a step. The step is there to catch slips, such as a wrong number, before they reach you.\n\nWhat is your current process for catching errors?\n\n#QualityControl #VirtualAssistant",
+  "x": "Ask any provider: who checks the work before it reaches me? Ours: the assistant drafts with AI, a person rewrites, a team lead reviews every task. What is your process?"
+ },
+ {
+  "id": "t08-cost-task",
+  "pillar": "time cost",
+  "li": "Cost per task is minutes divided by 60, times the hourly rate.\n\nA 15-minute task at $5.62 an hour: $1.40.\nThe same task at the $12 pay-as-you-go rate: $3.00.\n\nSo the useful question is not \"what is the hourly rate?\" It is \"how many minutes does my most repeated task take?\"\n\nWhat is yours?\n\n#SmallBusiness #Pricing",
+  "x": "A 15-minute task at $5.62 an hour: $1.40. At $12 an hour: $3.00. Cost per task = minutes / 60 x rate. What is your most repeated 15-minute task?"
+ },
+ {
+  "id": "t09-inbox-math",
+  "pillar": "time cost",
+  "li": "45 minutes a day on the inbox is 15.75 hours over 21 working days.\n\nAt $12 an hour that is $189.\nAt $5.62 an hour it is about $88.50.\n\nThe bigger cost is the 15.75 hours you do not spend on sales, clients or rest.\n\nHow long does your inbox take you each day?\n\n#Inbox #Delegation",
+  "x": "45 minutes a day on email is 15.75 hours over 21 working days. At $12 an hour: $189. The bigger cost is the 15.75 hours. How long is your inbox day?"
+ },
+ {
+  "id": "t10-effective-rate",
+  "pillar": "myth",
+  "li": "A low hourly rate is not always the low cost.\n\nEffective rate = hourly rate divided by the share of the work you can use as delivered.\n\n$4 an hour, and one task in three needs redoing: $4 / 0.67 = $6 per useful hour.\n$6 an hour with a review step: $6 per useful hour.\n\nSame cost. One of them also costs you the time to find the errors.\n\nHow do you measure the quality of outsourced work?\n\n#Outsourcing #SmallBusiness",
+  "x": "Effective rate = hourly rate / share of work you can use. $4 an hour with 1 task in 3 redone = $6 per useful hour. A $6 rate with review = $6. Same cost, fewer surprises."
+ },
+ {
+  "id": "t11-timezone",
+  "pillar": "time zones",
+  "li": "9 am in London is 2:30 pm in Kerala in winter, 1:30 pm in summer.\n9 am in Toronto is 7:30 pm in Kerala in January, 6:30 pm in July.\n9 am in Sydney is 3:30 am in Kerala in January.\n\nSo the overlap is easy for the UK and Canada, and Australia needs an early shift. We plan the team around your working day, not ours.\n\nWhich time zone do you need covered?\n\n#RemoteWork #TimeZones",
+  "x": "9 am in London = 2:30 pm in Kerala (winter). 9 am in Toronto = 7:30 pm (January). 9 am in Sydney = 3:30 am. UK and Canada overlap easily; Australia needs an early shift. Where are you?"
+ },
+ {
+  "id": "t12-month-end",
+  "pillar": "bookkeeping",
+  "li": "Month-end bookkeeping always late? Three habits.\n\n1. One checklist, used every month.\n2. Reconcile the bank first.\n3. A second person checks the numbers.\n\nWith those in place the rest of the close goes faster. General information, not tax or accounting advice.\n\nWhich step slips first at your month-end?\n\n#Bookkeeping #MonthEnd",
+  "x": "Month-end late again? One checklist. Reconcile the bank first. A second person checks the numbers. Which step slips first for you?"
+ },
+ {
+  "id": "t13-real-estate",
+  "pillar": "industry",
+  "li": "Real estate admin that can be handed off:\n\nListing details into the CRM\nShowing confirmations and reminders\nChasing signatures\nA weekly pipeline sheet\n\nThe agents keep the clients and the negotiation. We give no legal advice and make no outbound calls.\n\nWhat admin takes most of your week?\n\n#RealEstate #Admin",
+  "x": "Real estate admin you can hand off: listing details into the CRM, showing reminders, signature chasing, a weekly pipeline sheet. Agents keep the clients. What eats your week?"
+ },
+ {
+  "id": "t14-ecommerce",
+  "pillar": "industry",
+  "li": "Where an online store's week goes:\n\nOrder status emails\nReturns and exchange messages\nProduct listing updates\nStock sheet checks\n\nAll of it follows written rules, which makes it easy to hand off. Pricing and policy decisions stay with you.\n\nWhich of these costs you the most time?\n\n#Ecommerce #Shopify",
+  "x": "Store admin that follows rules can be handed off: order emails, returns messages, listing updates, stock sheet checks. Pricing and policy stay with you. Which costs you most time?"
+ },
+ {
+  "id": "t15-accountants",
+  "pillar": "industry",
+  "li": "Accountants: which client document do you chase most?\n\nBank statements, receipts, payroll reports, signed forms.\n\nChasing is a repeat task with a script: ask, remind after 3 days, escalate after 7, log it in a sheet.\n\nThat script can be handed off. The advice, the filings and the judgment stay with the accountant.\n\nWhich document is it for you?\n\n#Accounting #PracticeManagement",
+  "x": "Accountants: which client document do you chase most? Chasing has a script: ask, remind at 3 days, escalate at 7, log it. The advice and filings stay with you."
+ },
+ {
+  "id": "t16-coaches",
+  "pillar": "industry",
+  "li": "Coaches: the work between sessions.\n\nBooking and rescheduling\nSession reminders\nSending notes and worksheets\nChasing invoices\n\nNone of it is coaching. All of it takes hours you could spend with clients. We do not advise your clients and we do not handle clinical notes.\n\nWhich one would you hand off first?\n\n#Coaching #Solopreneur",
+  "x": "Coaches: booking, reminders, sending worksheets, chasing invoices. None of it is coaching. Which would you hand off first?"
+ },
+ {
+  "id": "t17-property",
+  "pillar": "industry",
+  "li": "Property managers: the paper trail of one maintenance request.\n\nLog it. Confirm with the tenant. Get quotes. Track the job. Record the invoice.\n\nEach step is small. Together they are an afternoon, every week.\n\nAn assistant can keep the tracker and the follow-ups. Emergencies and decisions stay with you or your on-call team.\n\nHow many open requests are you tracking right now?\n\n#PropertyManagement",
+  "x": "Maintenance requests: log, confirm, quote, track, invoice. Small steps, an afternoon a week. The tracker can be handed off. Emergencies stay with you. How many are open right now?"
+ },
+ {
+  "id": "t18-agencies",
+  "pillar": "industry",
+  "li": "Agency owners: the Friday report.\n\nThe numbers live in five tools. The layout never changes. It still eats Friday afternoon.\n\nHand off the number-pulling into your template. You review and send.\n\nStart with one client for one month and count the hours that come back.\n\nHow many reports do you build each month?\n\n#Agency #Reporting",
+  "x": "Agency owners: the report that eats Friday is a repeat task. Hand off the number-pulling, keep the review. Start with one client for a month. How many reports do you build?"
+ },
+ {
+  "id": "t19-founders",
+  "pillar": "industry",
+  "li": "Founders: the first thing to hand off is the inbox.\n\nNot replying for you. Sorting it.\n\nLabels, a daily summary, drafts for the routine replies, invoices flagged. You still decide and send.\n\nIt gives you back the first hour of the day, and it is the lowest-risk task to start with.\n\nWhat time does your email day start?\n\n#Founders #Productivity",
+  "x": "Founders: hand off sorting the inbox, not replying. Labels, a daily summary, drafts for routine replies. You decide and send. What time does your email day start?"
+ },
+ {
+  "id": "t20-access",
+  "pillar": "trust",
+  "li": "How to give an assistant access without giving away the keys.\n\n1. A separate login for them, never yours.\n2. The lowest role that does the job.\n3. One tool first.\n4. A password manager, not a shared note.\n5. Remove access the day the work ends.\n\nThis is general good practice, not a certification or a compliance claim.\n\nWhat would you add?\n\n#Security #SmallBusiness",
+  "x": "Give an assistant access safely: their own login, the lowest role, one tool first, a password manager, remove access when the work ends. What would you add?"
+ },
+ {
+  "id": "t21-first-three",
+  "pillar": "start small",
+  "li": "Three tasks most owners could hand off first:\n\n1. Inbox sorting and scheduling\n2. Invoicing and payment follow-ups\n3. Data entry and updating sheets\n\nThey repeat. They follow rules. A mistake is easy to spot and fix.\n\nTasks that need your judgment, like pricing and hiring, are better kept for later.\n\nWhich of the three is yours?\n\n#Delegation",
+  "x": "3 tasks to hand off first: inbox and scheduling, invoicing follow-ups, data entry. They repeat, follow rules, and mistakes are easy to spot. Which is yours?"
+ },
+ {
+  "id": "t22-review",
+  "pillar": "proof",
+  "li": "Rated 5.0 on Google from 17 reviews. One client wrote:\n\n\"MyRemoteVA has been a huge support system for me.\"\n\nIf you have worked with us, thank you. If you have not, one task on the $1 plan is the easiest way to see what the work looks like.\n\nWhat is the best support you have had in your business?\n\n#Reviews #SmallBusiness",
+  "x": "5.0 on Google from 17 reviews. One client: \"MyRemoteVA has been a huge support system for me.\" What is the best support you have had in your business?"
+ },
+ {
+  "id": "t23-dollar-plan",
+  "pillar": "offer",
+  "li": "The $1 plan, explained.\n\nIt adds one hour of work to your account every month. It is the cheapest way to test one real task.\n\nUnused hours roll over while your account is active. Payments are final, so test with a task you actually need done.\n\nStart at myremoteva.com/pricing.\n\nWhat would you test first?\n\n#SmallBusiness #Delegation",
+  "x": "The $1 plan adds one hour of work a month. Use it to test one real task. Unused hours roll over; payments are final, so pick a task you need done. What would you test first?"
+ },
+ {
+  "id": "t24-ladder",
+  "pillar": "offer",
+  "li": "How the pricing works, in one line: pay-as-you-go is $12 an hour, and every plan is a discount on it.\n\n3 hours for $33 is 8% off.\n36 hours for $324 is 25% off.\n80 hours for $500 is 47% off.\n160 hours for $899 is 53% off, $5.62 an hour.\n\nThe more steady your work, the lower the rate.\n\nHow many hours a month do you think you would use?\n\n#Pricing #SmallBusiness",
+  "x": "Pay-as-you-go is $12 an hour. Every plan is a discount on it: 3 hours for $33 is 8% off, 80 hours for $500 is 47% off, 160 hours for $899 is 53% off. How many hours would you use?"
+ },
+ {
+  "id": "t25-not-do",
+  "pillar": "trust",
+  "li": "What we do not do.\n\nNo outbound or cold calling. We answer inbound calls on the virtual receptionist service only.\nNo legal, tax or medical advice.\nNo work in languages other than English.\n\nWe would rather say it first than have you find out in week two.\n\nWhat is one thing you wish providers told you up front?\n\n#Transparency",
+  "x": "What we do not do: outbound calls, legal or tax advice, languages other than English. Better to say it first. What do you wish providers told you up front?"
+ },
+ {
+  "id": "t26-ai-loop",
+  "pillar": "trust",
+  "li": "How we use AI, plainly.\n\nThe assistant uses AI to draft: summaries, first replies, spreadsheet formulas. A person rewrites and checks it. A team lead reviews the task.\n\nAI makes the first draft faster. People are responsible for the result.\n\nHow does your current provider use AI?\n\n#AI #VirtualAssistant",
+  "x": "How we use AI: it drafts, a person rewrites and checks, a team lead reviews. AI speeds up the first draft; people own the result. How does your provider use it?"
+ },
+ {
+  "id": "t27-friday",
+  "pillar": "habit",
+  "li": "A 15-minute Friday habit that makes delegation work.\n\nOpen the week's tasks. For each one note: done well, needed a fix, or too slow. Fix the brief for any that needed a fix.\n\nAfter four weeks the briefs are good and the fixes stop.\n\nDo you review delegated work weekly, monthly or never?\n\n#Delegation #Management",
+  "x": "A 15-minute Friday habit: mark each delegated task done well, needed a fix, or too slow. Fix the brief, not the person. Weekly, monthly or never?"
+ },
+ {
+  "id": "t28-first-month",
+  "pillar": "start small",
+  "li": "A first month with an assistant, week by week.\n\nWeek 1: one task, a 5-line brief.\nWeek 2: add a second task. Review the first.\nWeek 3: share access to the tool they need.\nWeek 4: work out the hours you really use.\n\nThen pick a plan from your actual numbers, not from a guess.\n\nWhat would your week 1 task be?\n\n#Onboarding #SmallBusiness",
+  "x": "First month with an assistant: week 1 one task, week 2 a second, week 3 the tools, week 4 work out your real hours. Then pick the plan. What is your week 1 task?"
+ },
+ {
+  "id": "t29-busywork",
+  "pillar": "myth",
+  "li": "Myth: an assistant is for busy work.\n\nThe best first tasks are the small interruptions: the invoice, the schedule change, the \"quick\" data update.\n\nEach takes five minutes and breaks your focus for longer.\n\nHanding off the small interruptions protects the big work.\n\nWhat interrupts you most?\n\n#Focus #Productivity",
+  "x": "Myth: assistants are for busy work. The best first tasks are the small interruptions: the invoice, the schedule change, the quick data update. What interrupts you most?"
+ },
+ {
+  "id": "t30-five-questions",
+  "pillar": "trust",
+  "li": "Before you pay any virtual assistant provider, ask five things.\n\n1. Who does the work?\n2. Who checks it?\n3. What happens if they are away?\n4. What is extra?\n5. Can I start small?\n\nThe full list of ten is at myremoteva.com/blog/virtual-assistant-evaluation-checklist.\n\nWhich would you add?\n\n#VirtualAssistant #Outsourcing",
+  "x": "5 questions before you pay any VA provider: who does the work, who checks it, what if they are away, what is extra, can I start small? Which would you add?"
+ }
+]
