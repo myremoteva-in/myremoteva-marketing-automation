@@ -21,7 +21,8 @@
       "em1-calc",
       "tz1-zones",
       "tr1-trial",
-      "ca1-calc"
+      "ca1-calc",
+      "t01-time-sum"
     ],
     "twitter": [
       "ag1-reports",
@@ -48,7 +49,8 @@
       "wh1-where",
       "ch1-cheap",
       "ec1-store",
-      "ca2-canada"
+      "ca2-canada",
+      "t01-time-sum"
     ]
   }
 }
