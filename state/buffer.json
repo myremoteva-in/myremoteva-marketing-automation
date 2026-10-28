@@ -18,7 +18,10 @@
       "on1-week1",
       "tb1-brief",
       "ai1-human",
-      "em1-calc"
+      "em1-calc",
+      "tz1-zones",
+      "tr1-trial",
+      "ca1-calc"
     ],
     "twitter": [
       "ag1-reports",
@@ -42,7 +45,10 @@
       "tr1-trial",
       "ca1-calc",
       "ev1-check",
-      "wh1-where"
+      "wh1-where",
+      "ch1-cheap",
+      "ec1-store",
+      "ca2-canada"
     ]
   }
 }
