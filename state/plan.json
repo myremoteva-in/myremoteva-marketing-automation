@@ -1,22 +1,16 @@
 {
   "posts": [
     {
-      "channel": "linkedin",
-      "id": "e03-bear",
-      "image": "emo-bear.jpg",
-      "text": "Asking for help is not a weakness in a founder. It is a skill.\n\nThe bear reaches for the rope. The rabbit already has it.\n\nWhen did you last ask for help with your business, and what changed?\n\n#Entrepreneurs #Founders #AskForHelp"
-    },
-    {
       "channel": "twitter",
-      "id": "e03-bear",
-      "image": "emo-bear.jpg",
-      "text": "Asking for help is a founder skill. When did you last practise it?"
+      "id": "e04-snail",
+      "image": "emo-snail.jpg",
+      "text": "Do not let the small things steal the big things. What is the first sticky note you would peel off?"
     },
     {
       "channel": "facebook",
-      "id": "e02-cat",
-      "image": "emo-cat.jpg",
-      "text": "A calm founder is not a founder with fewer tasks.\n\nIt is a founder with someone quietly handling the ropes, the lanterns and the small repairs, so they can read the map.\n\nThat is the work we do at MyRemoteVA: admin, bookkeeping and support, with a team lead reviewing every task.\n\nWho is handling the details behind you?\n\n#Leadership #Entrepreneurs #SmallBusiness"
+      "id": "e03-bear",
+      "image": "emo-bear.jpg",
+      "text": "Asking for help is not a weakness in a founder. It is a skill.\n\nThe bear reaches for the rope. The rabbit already has it.\n\nWhen did you last ask for help with your business, and what changed?\n\n#Entrepreneurs #Founders #AskForHelp"
     }
   ]
 }
