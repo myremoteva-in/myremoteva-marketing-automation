@@ -2,15 +2,15 @@
   "posts": [
     {
       "channel": "twitter",
-      "id": "e04-snail",
-      "image": "emo-snail.jpg",
-      "text": "Do not let the small things steal the big things. What is the first sticky note you would peel off?"
+      "id": "e05-deer",
+      "image": "emo-deer.jpg",
+      "text": "Your best idea will not come from your inbox. Where do your best ideas come from?"
     },
     {
       "channel": "facebook",
-      "id": "e03-bear",
-      "image": "emo-bear.jpg",
-      "text": "Asking for help is not a weakness in a founder. It is a skill.\n\nThe bear reaches for the rope. The rabbit already has it.\n\nWhen did you last ask for help with your business, and what changed?\n\n#Entrepreneurs #Founders #AskForHelp"
+      "id": "e04-snail",
+      "image": "emo-snail.jpg",
+      "text": "Small tasks stick to you like sticky notes.\n\nOne reply. One invoice. One quick update. Each is small. Together they weigh more than the big goal waiting ahead.\n\nPeel a few off this week. Which one goes first?\n\n#Productivity #Delegation #Focus"
     }
   ]
 }
