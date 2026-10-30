@@ -2,7 +2,8 @@
   "used": {
     "facebook": [
       "e02-cat",
-      "e03-bear"
+      "e03-bear",
+      "e04-snail"
     ],
     "linkedin": [
       "ag1-reports",
@@ -58,7 +59,8 @@
       "t01-time-sum",
       "e02-cat",
       "e03-bear",
-      "e04-snail"
+      "e04-snail",
+      "e05-deer"
     ]
   }
 }
