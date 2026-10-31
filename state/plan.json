@@ -1,16 +1,10 @@
 {
   "posts": [
     {
-      "channel": "twitter",
+      "channel": "facebook",
       "id": "e05-deer",
       "image": "emo-deer.jpg",
-      "text": "Your best idea will not come from your inbox. Where do your best ideas come from?"
-    },
-    {
-      "channel": "facebook",
-      "id": "e04-snail",
-      "image": "emo-snail.jpg",
-      "text": "Small tasks stick to you like sticky notes.\n\nOne reply. One invoice. One quick update. Each is small. Together they weigh more than the big goal waiting ahead.\n\nPeel a few off this week. Which one goes first?\n\n#Productivity #Delegation #Focus"
+      "text": "Your best idea will not arrive between the 40th and 41st email.\n\nIt arrives when your head has room.\n\nWhere do your best ideas come from?\n\n#Founders #Focus #Creativity"
     }
   ]
 }
