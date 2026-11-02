@@ -5,7 +5,8 @@
       "e03-bear",
       "e04-snail",
       "e05-deer",
-      "e06-seedling"
+      "e06-seedling",
+      "e07-balloon"
     ],
     "linkedin": [
       "ag1-reports",
@@ -30,7 +31,8 @@
       "ca1-calc",
       "t01-time-sum",
       "e02-cat",
-      "e03-bear"
+      "e03-bear",
+      "e04-snail"
     ],
     "twitter": [
       "ag1-reports",
@@ -62,7 +64,8 @@
       "e02-cat",
       "e03-bear",
       "e04-snail",
-      "e05-deer"
+      "e05-deer",
+      "e06-seedling"
     ]
   }
 }
