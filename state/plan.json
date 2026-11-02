@@ -1,10 +1,22 @@
 {
   "posts": [
     {
-      "channel": "facebook",
+      "channel": "linkedin",
+      "id": "e04-snail",
+      "image": "emo-snail.jpg",
+      "text": "Small tasks stick to you like sticky notes.\n\nOne reply. One invoice. One quick update. Each is small. Together they weigh more than the big goal waiting ahead.\n\nPeel a few off this week. Which one goes first?\n\n#Productivity #Delegation #Focus"
+    },
+    {
+      "channel": "twitter",
       "id": "e06-seedling",
       "image": "emo-seedling.jpg",
-      "text": "Growth needs space.\n\nA desk full of small jobs leaves no light for the one thing that could grow.\n\nWhat would you grow if your desk was clear?\n\n#Growth #SmallBusiness #Delegation"
+      "text": "Growth needs space. Make some. What would you grow with a clear desk?"
+    },
+    {
+      "channel": "facebook",
+      "id": "e07-balloon",
+      "image": "emo-balloon.jpg",
+      "text": "The right support makes the work lighter, not smaller.\n\nYou keep the vision and the decisions. Others carry the sandbags.\n\nWhat is the heaviest sandbag in your business right now?\n\n#Business #Delegation #Founders"
     }
   ]
 }
