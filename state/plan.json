@@ -2,21 +2,21 @@
   "posts": [
     {
       "channel": "linkedin",
-      "id": "e04-snail",
-      "image": "emo-snail.jpg",
-      "text": "Small tasks stick to you like sticky notes.\n\nOne reply. One invoice. One quick update. Each is small. Together they weigh more than the big goal waiting ahead.\n\nPeel a few off this week. Which one goes first?\n\n#Productivity #Delegation #Focus"
+      "id": "e05-deer",
+      "image": "emo-deer.jpg",
+      "text": "Your best idea will not arrive between the 40th and 41st email.\n\nIt arrives when your head has room.\n\nWhere do your best ideas come from?\n\n#Founders #Focus #Creativity"
     },
     {
       "channel": "twitter",
-      "id": "e06-seedling",
-      "image": "emo-seedling.jpg",
-      "text": "Growth needs space. Make some. What would you grow with a clear desk?"
+      "id": "e07-balloon",
+      "image": "emo-balloon.jpg",
+      "text": "The right support makes the work lighter, not smaller. What is your heaviest sandbag?"
     },
     {
       "channel": "facebook",
-      "id": "e07-balloon",
-      "image": "emo-balloon.jpg",
-      "text": "The right support makes the work lighter, not smaller.\n\nYou keep the vision and the decisions. Others carry the sandbags.\n\nWhat is the heaviest sandbag in your business right now?\n\n#Business #Delegation #Founders"
+      "id": "e08-lighthouse",
+      "image": "emo-lighthouse.jpg",
+      "text": "Even a lighthouse has a keeper.\n\nThe light looks effortless from the sea. Someone is polishing the lens, carrying supplies and checking the lamp every night.\n\nWho keeps your light on?\n\n#Leadership #Entrepreneurs #Teamwork"
     }
   ]
 }
