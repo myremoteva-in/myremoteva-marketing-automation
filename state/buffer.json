@@ -34,7 +34,8 @@
       "e02-cat",
       "e03-bear",
       "e04-snail",
-      "e05-deer"
+      "e05-deer",
+      "e06-seedling"
     ],
     "twitter": [
       "ag1-reports",
@@ -68,7 +69,8 @@
       "e04-snail",
       "e05-deer",
       "e06-seedling",
-      "e07-balloon"
+      "e07-balloon",
+      "e08-lighthouse"
     ]
   }
 }
