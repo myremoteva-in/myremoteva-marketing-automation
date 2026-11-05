@@ -1,16 +1,3 @@
 {
-  "posts": [
-    {
-      "channel": "linkedin",
-      "id": "e06-seedling",
-      "image": "emo-seedling.jpg",
-      "text": "Growth needs space.\n\nA desk full of small jobs leaves no light for the one thing that could grow.\n\nWhat would you grow if your desk was clear?\n\n#Growth #SmallBusiness #Delegation"
-    },
-    {
-      "channel": "twitter",
-      "id": "e08-lighthouse",
-      "image": "emo-lighthouse.jpg",
-      "text": "Even a lighthouse has a keeper. Who keeps your light on?"
-    }
-  ]
+  "posts": []
 }
